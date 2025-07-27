@@ -44,23 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionContent = this.nextElementSibling;
             const isActive = sectionContent.classList.contains('active');
             
-            // تبديل حالة القسم الحالي فقط (فتح/إغلاق)
-            if (isActive) {
-                // إذا كان القسم مفتوحاً، أغلقه
-                this.classList.remove('active');
-                sectionContent.classList.remove('active');
-                
-                statusMessage.textContent = `تم إغلاق قسم المستوى ${minLevel} - ${maxLevel}.`;
-                statusMessage.style.color = '#3498db';
-                setTimeout(() => {
-                    statusMessage.style.color = '';
-                }, 2000);
-            } else {
-                // إذا كان القسم مغلقاً، أغلق جميع الأقسام الأخرى أولاً
-                sectionHeaders.forEach(h => h.classList.remove('active'));
-                sectionContents.forEach(c => c.classList.remove('active'));
-                
-                // ثم افتح هذا القسم
+            // إغلاق جميع الأقسام
+            sectionHeaders.forEach(h => h.classList.remove('active'));
+            sectionContents.forEach(c => c.classList.remove('active'));
+            
+            // إذا كان القسم مفتوحاً بالفعل، أغلقه فقط
+            if (!isActive) {
+                // تحديد هذا القسم كنشط
                 this.classList.add('active');
                 sectionContent.classList.add('active');
                 
