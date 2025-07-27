@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل صور منتجات Hay Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>منتجات لعبة Hay Day</h1>
+        <p>جدول منظم لمنتجات اللعبة مع المستويات وإمكانية تحميل الصور</p>
+    </header>
+    
+    <main>
+        <section id="control-panel">
+            <button id="fetch-images-btn" class="btn">جلب صور المنتجات</button>
+            <div id="status-message"></div>
+            <div id="loading-spinner" class="hidden"></div>
+        </section>
+        
+        <section id="products-sections">
+            <h2>أقسام المنتجات</h2>
+            
+            <!-- قسم المستوى 1-25 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="1" data-max-level="25">منتجات من لفل 1-25</button>
+                <div class="section-content" id="level-1-25">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+            
+            <!-- قسم المستوى 26-50 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="26" data-max-level="50">منتجات من لفل 26-50</button>
+                <div class="section-content" id="level-26-50">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+            
+            <!-- قسم المستوى 51-75 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="51" data-max-level="75">منتجات من لفل 51-75</button>
+                <div class="section-content" id="level-51-75">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+            
+            <!-- قسم المستوى 76-100 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="76" data-max-level="100">منتجات من لفل 76-100</button>
+                <div class="section-content" id="level-76-100">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+            
+            <!-- قسم المستوى 101-125 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="101" data-max-level="125">منتجات من لفل 101-125</button>
+                <div class="section-content" id="level-101-125">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+            
+            <!-- قسم المستوى 126-150 -->
+            <div class="level-section">
+                <button class="section-header" data-min-level="126" data-max-level="150">منتجات من لفل 126-150</button>
+                <div class="section-content" id="level-126-150">
+                    <!-- سيتم ملؤ هذا القسم بالمنتجات ديناميكياً -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p class="designer-text">صمم بواسطة: <a href="https://www.facebook.com/Ali.Hilfi2018" target="_blank" class="designer-link"><span class="designer-name">علي الحلفي</span></a></p>
+                <p class="group-text">تابع لكروب: <a href="https://www.facebook.com/share/g/16xkVfGz65/" target="_blank" class="group-link">المحبه و التعاون Hay Day</a></p>
+            </div>
+            <div class="copyright">
+                <p>تم إنشاء هذه الأداة للاستخدام الشخصي فقط</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
