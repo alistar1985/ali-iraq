@@ -492,9 +492,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // إنشاء صورة المنتج
         const img = document.createElement('img');
-        img.src = productData.url;
+        // تنظيف رابط الصورة من المعلمات
+        const cleanUrl = productData.url.split('?')[0];
+        img.src = cleanUrl;
         img.alt = productData.name;
         img.loading = 'lazy'; // تحميل الصور بشكل تدريجي
+        img.onerror = function() {
+            // في حالة فشل تحميل الصورة، استخدم صورة بديلة
+            this.src = 'https://via.placeholder.com/100x100?text=' + encodeURIComponent(productData.name);
+        };
         
         // إنشاء اسم المنتج
         const nameDiv = document.createElement('div');
