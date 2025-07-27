@@ -492,14 +492,26 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // إنشاء صورة المنتج
         const img = document.createElement('img');
-        // تنظيف رابط الصورة من المعلمات
-        const cleanUrl = productData.url.split('?')[0];
+        // تعديل رابط الصورة ليعمل عبر CORS
+        // استخدام رابط مباشر بدون معلمات وإضافة بروكسي CORS إذا لزم الأمر
+        const originalUrl = productData.url;
+        // إزالة معلمات الاستعلام
+        const cleanUrl = originalUrl.split('?')[0];
+        // استخدام بروكسي CORS للصور
+        const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        // تجربة الرابط المباشر أولاً
         img.src = cleanUrl;
         img.alt = productData.name;
         img.loading = 'lazy'; // تحميل الصور بشكل تدريجي
+        img.crossOrigin = 'anonymous'; // السماح بالتحميل عبر CORS
         img.onerror = function() {
-            // في حالة فشل تحميل الصورة، استخدم صورة بديلة
-            this.src = 'https://via.placeholder.com/100x100?text=' + encodeURIComponent(productData.name);
+            // في حالة فشل تحميل الصورة، جرب استخدام بروكسي CORS
+            this.onerror = function() {
+                // إذا فشل البروكسي أيضًا، استخدم صورة بديلة
+                this.src = 'https://via.placeholder.com/100x100?text=' + encodeURIComponent(productData.name);
+            };
+            // جرب استخدام البروكسي
+            this.src = corsProxyUrl + cleanUrl;
         };
         
         // إنشاء اسم المنتج
@@ -585,45 +597,57 @@ document.addEventListener('DOMContentLoaded', function() {
         // تحويل الرابط للتأكد من أنه لا يحتوي على معلمات منع التحميل
         // إزالة المعلمات مثل ?cb=XXXXXX التي قد تمنع التحميل
         const cleanUrl = url.split('?')[0];
+        // بروكسي CORS للتحميل عبر الإنترنت
+        const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
         
-        // استخدام fetch لجلب الصورة كبيانات blob
-        fetch(cleanUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`فشل تحميل الصورة: ${response.statusText}`);
-                }
-                return response.blob();
-            })
-            .then(blob => {
-                // إنشاء URL مؤقت للبيانات
-                const blobUrl = URL.createObjectURL(blob);
-                
-                // إنشاء عنصر رابط للتحميل
-                const link = document.createElement('a');
-                link.href = blobUrl;
-                link.download = `${fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.png`;
-                document.body.appendChild(link);
-                link.click();
-                
-                // تنظيف الموارد
-                setTimeout(() => {
-                    document.body.removeChild(link);
-                    URL.revokeObjectURL(blobUrl);
-                    statusMessage.textContent = `تم تحميل ${fileName} بنجاح!`;
-                    statusMessage.style.color = '#2ecc71';
-                    setTimeout(() => {
-                        statusMessage.style.color = '';
-                    }, 2000);
-                }, 100);
+        // محاولة تحميل الصورة مباشرة أولاً
+        tryDownload(cleanUrl)
+            .catch(error => {
+                console.log('Direct download failed, trying with CORS proxy:', error);
+                // إذا فشلت المحاولة الأولى، جرب باستخدام بروكسي CORS
+                return tryDownload(corsProxyUrl + cleanUrl);
             })
             .catch(error => {
-                console.error('Error downloading image:', error);
+                console.error('All download attempts failed:', error);
                 statusMessage.textContent = `فشل تحميل الصورة: ${error.message}`;
                 statusMessage.style.color = '#e74c3c';
                 setTimeout(() => {
                     statusMessage.style.color = '';
                 }, 3000);
             });
+            
+        // دالة داخلية لمحاولة التحميل
+        function tryDownload(downloadUrl) {
+            return fetch(downloadUrl, { mode: 'cors', credentials: 'omit' })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`فشل تحميل الصورة: ${response.statusText}`);
+                    }
+                    return response.blob();
+                })
+                .then(blob => {
+                    // إنشاء URL مؤقت للبيانات
+                    const blobUrl = URL.createObjectURL(blob);
+                    
+                    // إنشاء عنصر رابط للتحميل
+                    const link = document.createElement('a');
+                    link.href = blobUrl;
+                    link.download = `${fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.png`;
+                    document.body.appendChild(link);
+                    link.click();
+                    
+                    // تنظيف الموارد
+                    setTimeout(() => {
+                        document.body.removeChild(link);
+                        URL.revokeObjectURL(blobUrl);
+                        statusMessage.textContent = `تم تحميل ${fileName} بنجاح!`;
+                        statusMessage.style.color = '#2ecc71';
+                        setTimeout(() => {
+                            statusMessage.style.color = '';
+                        }, 2000);
+                    }, 100);
+                });
+        }
     }
     
 
