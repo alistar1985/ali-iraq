@@ -126,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Butter', url: './images/products/1-25/9_butter.png', level: 9 },
                 
                 // Row 3
-                { name: 'Plain Waffles', url: 'https://static.wikia.nocookie.net/hayday/images/6/66/Plain_Waffles.png/revision/latest/scale-to-width-down/75?cb=20240217133029', level: 114 },
                 { name: 'Pig Feed', url: './images/products/1-25/10_pig_feed.png', level: 10 },
                 { name: 'Cookie', url: './images/products/1-25/10_cookie.png', level: 10 },
                 { name: 'Bacon and Eggs', url: './images/products/1-25/11_bacon_and_eggs.png', level: 11 },
