@@ -556,22 +556,7 @@ document.addEventListener('DOMContentLoaded', function() {
             downloadImage(productData.url, productData.name);
         };
         
-        // إنشاء منطقة التفاصيل الموسعة
-        const expandedDetails = document.createElement('div');
-        expandedDetails.className = 'product-details';
-        expandedDetails.innerHTML = `
-            <div class="details-content">
-                <div class="details-row">
-                    <strong>اسم المنتج:</strong> ${productData.name}
-                </div>
-                <div class="details-row">
-                    <strong>المستوى المطلوب:</strong> ${level}
-                </div>
-                <div class="details-row">
-                    <strong>رابط الصورة:</strong> <a href="${productData.url}" target="_blank">فتح الصورة</a>
-                </div>
-            </div>
-        `;
+        // لم نعد نحتاج إلى منطقة التفاصيل الموسعة بناءً على طلب المستخدم
         
         // إضافة العناصر إلى البطاقة
         card.appendChild(img);
@@ -579,31 +564,10 @@ document.addEventListener('DOMContentLoaded', function() {
         card.appendChild(levelDiv);
         card.appendChild(downloadBtn);
         
-        // إضافة حدث النقر لتوسيع/طي التفاصيل
-        card.addEventListener('click', function() {
-            // إذا كانت التفاصيل مخفية، أظهرها
-            if (!cardContainer.classList.contains('expanded')) {
-                // إغلاق جميع البطاقات المفتوحة الأخرى
-                document.querySelectorAll('.product-container.expanded').forEach(container => {
-                    if (container !== cardContainer) {
-                        container.classList.remove('expanded');
-                        container.querySelector('.product-details').style.maxHeight = '0';
-                    }
-                });
-                
-                // فتح هذه البطاقة
-                cardContainer.classList.add('expanded');
-                expandedDetails.style.maxHeight = expandedDetails.scrollHeight + 'px';
-            } else {
-                // إذا كانت مفتوحة، أغلقها
-                cardContainer.classList.remove('expanded');
-                expandedDetails.style.maxHeight = '0';
-            }
-        });
+        // لم نعد نحتاج إلى حدث النقر للتوسيع بناءً على طلب المستخدم
         
-        // إضافة البطاقة والتفاصيل إلى الحاوية
+        // إضافة البطاقة إلى الحاوية
         cardContainer.appendChild(card);
-        cardContainer.appendChild(expandedDetails);
         
         return cardContainer;
     }
