@@ -440,6 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Row 2
                 { name: 'Winter Stew', url: './images/products/101-125/112_winter_stew.png', level: 112 },
                 { name: 'Tropical Cupcake', url: './images/products/101-125/112_tropical_cupcake.png', level: 112 },
+                { name: 'Plain Waffles', url: './images/products/101-125/114_plain_waffles.png', level: 114 },
                 { name: 'Zesty Perfume', url: './images/products/101-125/111_zesty_perfume.png', level: 111 },
                 { name: 'Cookie Cupcake', url: './images/products/101-125/111_cookie_cupcake.png', level: 111 },
                 { name: 'Calming Diffuser', url: './images/products/101-125/116_calming_diffuser.png', level: 116 },
