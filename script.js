@@ -114,63 +114,63 @@ document.addEventListener('DOMContentLoaded', function() {
             productImages = [
                 // المستوى 1-25
                 // Row 1
-                { name: 'Bread', url: './images/products/1-25/2_bread.png', level: 2 },
-                { name: 'Chicken Feed', url: './images/products/1-25/3_chicken_feed.png', level: 3 },
-                { name: 'Cow Feed', url: './images/products/1-25/6_cow_feed.png', level: 6 },
-                { name: 'Cream', url: './images/products/1-25/6_cream.png', level: 6 },
+                { name: 'Bread', arabicName: 'خبز', url: './images/products/1-25/2_bread.png', level: 2 },
+                { name: 'Chicken Feed', arabicName: 'علف دجاج', url: './images/products/1-25/3_chicken_feed.png', level: 3 },
+                { name: 'Cow Feed', arabicName: 'علف بقر', url: './images/products/1-25/6_cow_feed.png', level: 6 },
+                { name: 'Cream', arabicName: 'كريمة', url: './images/products/1-25/6_cream.png', level: 6 },
                 
                 // Row 2
-                { name: 'Corn Bread', url: './images/products/1-25/7_corn_bread.png', level: 7 },
-                { name: 'Brown Sugar', url: './images/products/1-25/7_brown_sugar.png', level: 7 },
-                { name: 'Popcorn', url: './images/products/1-25/8_popcorn.png', level: 8 },
-                { name: 'Butter', url: './images/products/1-25/9_butter.png', level: 9 },
+                { name: 'Corn Bread', arabicName: 'خبز ذرة', url: './images/products/1-25/7_corn_bread.png', level: 7 },
+                { name: 'Brown Sugar', arabicName: 'سكر بني', url: './images/products/1-25/7_brown_sugar.png', level: 7 },
+                { name: 'Popcorn', arabicName: 'فشار', url: './images/products/1-25/8_popcorn.png', level: 8 },
+                { name: 'Butter', arabicName: 'زبدة', url: './images/products/1-25/9_butter.png', level: 9 },
                 
                 // Row 3
-                { name: 'Pig Feed', url: './images/products/1-25/10_pig_feed.png', level: 10 },
-                { name: 'Cookie', url: './images/products/1-25/10_cookie.png', level: 10 },
-                { name: 'Bacon and Eggs', url: './images/products/1-25/11_bacon_and_eggs.png', level: 11 },
+                { name: 'Pig Feed', arabicName: 'علف خنزير', url: './images/products/1-25/10_pig_feed.png', level: 10 },
+                { name: 'Cookie', arabicName: 'كوكيز', url: './images/products/1-25/10_cookie.png', level: 10 },
+                { name: 'Bacon and Eggs', arabicName: 'بيض مقلي مع لحم', url: './images/products/1-25/11_bacon_and_eggs.png', level: 11 },
                 
                 // Row 4
-                { name: 'Cheese', url: './images/products/1-25/12_cheese.png', level: 12 },
-                { name: 'White Sugar', url: './images/products/1-25/13_white_sugar.png', level: 13 },
-                { name: 'Carrot Pie', url: './images/products/1-25/14_carrot_pie.png', level: 14 },
-                { name: 'Pumpkin Pie', url: './images/products/1-25/15_pumpkin_pie.png', level: 15 },
+                { name: 'Cheese', arabicName: 'جبن', url: './images/products/1-25/12_cheese.png', level: 12 },
+                { name: 'White Sugar', arabicName: 'سكر أبيض', url: './images/products/1-25/13_white_sugar.png', level: 13 },
+                { name: 'Carrot Pie', arabicName: 'فطيرة جزر', url: './images/products/1-25/14_carrot_pie.png', level: 14 },
+                { name: 'Pumpkin Pie', arabicName: 'فطيرة قرع', url: './images/products/1-25/15_pumpkin_pie.png', level: 15 },
                 
                 // Row 5
-                { name: 'Sheep Feed', url: './images/products/1-25/16_sheep_feed.png', level: 16 },
-                { name: 'Buttered Popcorn', url: './images/products/1-25/16_buttered_popcorn.png', level: 16 },
-                { name: 'Sweater', url: './images/products/1-25/17_sweater.png', level: 17 },
-                { name: 'Bacon Pie', url: './images/products/1-25/18_bacon_pie.png', level: 18 },
+                { name: 'Sheep Feed', arabicName: 'علف غنم', url: './images/products/1-25/16_sheep_feed.png', level: 16 },
+                { name: 'Buttered Popcorn', arabicName: 'فشار بالزبدة', url: './images/products/1-25/16_buttered_popcorn.png', level: 16 },
+                { name: 'Sweater', arabicName: 'سترة', url: './images/products/1-25/17_sweater.png', level: 17 },
+                { name: 'Bacon Pie', arabicName: 'فطيرة باللحم', url: './images/products/1-25/18_bacon_pie.png', level: 18 },
                 
                 // Row 6
-                { name: 'Syrup', url: './images/products/1-25/18_syrup.png', level: 18 },
-                { name: 'Cotton Fabric', url: './images/products/1-25/18_cotton_fabric.png', level: 18 },
-                { name: 'Hamburger', url: './images/products/1-25/18_hamburger.png', level: 18 },
-                { name: 'Raspberry Muffin', url: './images/products/1-25/19_raspberry_muffin.png', level: 19 },
+                { name: 'Syrup', arabicName: 'شراب', url: './images/products/1-25/18_syrup.png', level: 18 },
+                { name: 'Cotton Fabric', arabicName: 'نسيح القطن ', url: './images/products/1-25/18_cotton_fabric.png', level: 18 },
+                { name: 'Hamburger', arabicName: 'همبرغر', url: './images/products/1-25/18_hamburger.png', level: 18 },
+                { name: 'Raspberry Muffin', arabicName: 'كعكة توت العليق', url: './images/products/1-25/19_raspberry_muffin.png', level: 19 },
                 
                 // Row 7
-                { name: 'Blue Woolly Hat', url: './images/products/1-25/19_blue_woolly_hat.png', level: 19 },
-                { name: 'Cotton Shirt', url: './images/products/1-25/19_cotton_shirt.png', level: 19 },
-                { name: 'Blue Sweater', url: './images/products/1-25/20_blue_sweater.png', level: 20 },
-                { name: 'Carrot Cake', url: './images/products/1-25/21_carrot_cake.png', level: 21 },
+                { name: 'Blue Woolly Hat', arabicName: 'قبعة صصوف زرقاء', url: './images/products/1-25/19_blue_woolly_hat.png', level: 19 },
+                { name: 'Cotton Shirt', arabicName: 'قميص قطني', url: './images/products/1-25/19_cotton_shirt.png', level: 19 },
+                { name: 'Blue Sweater', arabicName: 'سترة زرقاء', url: './images/products/1-25/20_blue_sweater.png', level: 20 },
+                { name: 'Carrot Cake', arabicName: 'كيكة جزر', url: './images/products/1-25/21_carrot_cake.png', level: 21 },
                 
                 // Row 8
-                { name: 'Wooly Chaps', url: './images/products/1-25/21_wooly_chaps.png', level: 21 },
-                { name: 'Cream Cake', url: './images/products/1-25/23_cream_cake.png', level: 23 },
-                { name: 'Red Berry Cake', url: './images/products/1-25/23_red_berry_cake.png', level: 23 },
-                { name: 'Cheesecake', url: './images/products/1-25/24_cheesecake.png', level: 24 },
+                { name: 'Wooly Chaps', arabicName: 'سروال صوف', url: './images/products/1-25/21_wooly_chaps.png', level: 21 },
+                { name: 'Cream Cake', arabicName: 'كيكة كريمة', url: './images/products/1-25/23_cream_cake.png', level: 23 },
+                { name: 'Red Berry Cake', arabicName: 'كيكة التوت الأحمر', url: './images/products/1-25/23_red_berry_cake.png', level: 23 },
+                { name: 'Cheesecake', arabicName: ' كعكة الجبن', url: './images/products/1-25/24_cheesecake.png', level: 24 },
                 
                 // Row 9
-                { name: 'Silver Ore', url: './images/products/1-25/24_silver_ore.png', level: 24 },
-                { name: 'Gold Ore', url: './images/products/1-25/24_gold_ore.png', level: 24 },
-                { name: 'Platinum Ore', url: './images/products/1-25/24_platinum_ore.png', level: 24 },
-                { name: 'Silver Bar', url: './images/products/1-25/24_silver_bar.png', level: 24 },
+                { name: 'Silver Ore', arabicName: 'خام الفضة', url: './images/products/1-25/24_silver_ore.png', level: 24 },
+                { name: 'Gold Ore', arabicName: 'خام الذهب', url: './images/products/1-25/24_gold_ore.png', level: 24 },
+                { name: 'Platinum Ore', arabicName: 'خام البلاتين', url: './images/products/1-25/24_platinum_ore.png', level: 24 },
+                { name: 'Silver Bar', arabicName: 'سبيكة فضة', url: './images/products/1-25/24_silver_bar.png', level: 24 },
                 
                 // Row 10
-                { name: 'Chili Popcorn', url: './images/products/1-25/25_chili_popcorn.png', level: 25 },
-                { name: 'Gold Bar', url: './images/products/1-25/25_gold_bar.png', level: 25 },
-                { name: 'Platinum Bar', url: './images/products/1-25/25_platinum_bar.png', level: 25 },
-                { name: 'Violet Dress', url: './images/products/1-25/25_violet_dress.png', level: 25 },
+                { name: 'Chili Popcorn', arabicName: 'فشار حار', url: './images/products/1-25/25_chili_popcorn.png', level: 25 },
+                { name: 'Gold Bar', arabicName: 'سبيكة ذهب', url: './images/products/1-25/25_gold_bar.png', level: 25 },
+                { name: 'Platinum Bar', arabicName: 'سبيكة بلاتين', url: './images/products/1-25/25_platinum_bar.png', level: 25 },
+                { name: 'Violet Dress', arabicName: 'فستان بنفسجي', url: './images/products/1-25/25_violet_dress.png', level: 25 },
                 
                 // المستوى 26-50
                 // Row 1
