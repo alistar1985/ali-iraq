@@ -175,292 +175,296 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // المستوى 26-50
                 // Row 1
-                { name: 'Blackberry Muffin', url: 'https://static.wikia.nocookie.net/hayday/images/c/c9/Blackberry_Muffin.png/revision/latest/scale-to-width-down/75?cb=20240205074434', level: 26 },
-                { name: 'Carrot Juice', url: 'https://static.wikia.nocookie.net/hayday/images/e/e0/Carrot_Juice.png/revision/latest/scale-to-width-down/75?cb=20150711232322', level: 26 },
-                { name: 'Fish Burger', url: 'https://static.wikia.nocookie.net/hayday/images/7/7e/Fish_Burger.png/revision/latest/scale-to-width-down/75?cb=20240205164539', level: 27 },
-                { name: 'Red Lure', url: 'https://static.wikia.nocookie.net/hayday/images/9/96/Red_Lure.png/revision/latest/scale-to-width-down/75?cb=20140330225706', level: 27 },
+                { name: 'Blackberry Muffin', url: './images/products/26-50/26_blackberry_muffin.png', level: 26 },
+                { name: 'Carrot Juice', url: './images/products/26-50/26_carrot_juice.png', level: 26 },
+                { name: 'Fish Burger', url: './images/products/26-50/27_fish_burger.png', level: 27 },
+                { name: 'Red Lure', url: './images/products/26-50/27_red_lure.png', level: 27 },
                 
                 // Row 2
-                { name: 'Green Lure', url: 'https://static.wikia.nocookie.net/hayday/images/c/c4/Green_Lure.png/revision/latest/scale-to-width-down/75?cb=20140330225800', level: 27 },
-                { name: 'Blue Lure', url: 'https://static.wikia.nocookie.net/hayday/images/1/12/Blue_Lure.png/revision/latest/scale-to-width-down/75?cb=20140330225859', level: 27 },
-                { name: 'Purple Lure', url: 'https://static.wikia.nocookie.net/hayday/images/1/17/Purple_Lure.png/revision/latest/scale-to-width-down/75?cb=20140330225936', level: 27 },
-                { name: 'Gold Lure', url: 'https://static.wikia.nocookie.net/hayday/images/a/a8/Gold_Lure.png/revision/latest/scale-to-width-down/75?cb=20140330230009', level: 27 },
+                { name: 'Green Lure', url: './images/products/26-50/27_green_lure.png', level: 27 },
+                { name: 'Blue Lure', url: './images/products/26-50/27_blue_lure.png', level: 27 },
+                { name: 'Purple Lure', url: './images/products/26-50/27_purple_lure.png', level: 27 },
+                { name: 'Gold Lure', url: './images/products/26-50/27_gold_lure.png', level: 27 },
                 
                 // Row 3
-                { name: 'Apple Pie', url: 'https://static.wikia.nocookie.net/hayday/images/f/fb/Apple_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207083954', level: 28 },
-                { name: 'Fish Pie', url: 'https://static.wikia.nocookie.net/hayday/images/e/ec/Fish_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207150258', level: 28 },
-                { name: 'Apple Juice', url: 'https://static.wikia.nocookie.net/hayday/images/4/41/Apple_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223064501', level: 28 },
-                { name: 'Vanilla Ice Cream', url: 'https://static.wikia.nocookie.net/hayday/images/1/15/Vanilla_Ice_Cream.png/revision/latest/scale-to-width-down/75?cb=20240411152616', level: 29 },
+                { name: 'Apple Pie', url: './images/products/26-50/28_apple_pie.png', level: 28 },
+                { name: 'Fish Pie', url: './images/products/26-50/28_fish_pie.png', level: 28 },
+                { name: 'Apple Juice', url: './images/products/26-50/28_apple_juice.png', level: 28 },
+                { name: 'Vanilla Ice Cream', url: './images/products/26-50/29_vanilla_ice_cream.png', level: 29 },
                 
                 // Row 4
-                { name: 'Roasted Tomatoes', url: 'https://static.wikia.nocookie.net/hayday/images/0/04/Roasted_Tomatoes.png/revision/latest/scale-to-width-down/75?cb=20191023233109', level: 30 },
-                { name: 'Cherry Juice', url: 'https://static.wikia.nocookie.net/hayday/images/a/ab/Cherry_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223064636', level: 30 },
-                { name: 'Fishing Net', url: 'https://static.wikia.nocookie.net/hayday/images/a/a1/Fishing_Net.png/revision/latest/scale-to-width-down/75?cb=20150725033019', level: 30 },
-                { name: 'Mystery Net', url: 'https://static.wikia.nocookie.net/hayday/images/1/17/Mystery_Net.png/revision/latest/scale-to-width-down/75?cb=20150725033113', level: 30 },
+                { name: 'Roasted Tomatoes', url: './images/products/26-50/30_roasted_tomatoes.png', level: 30 },
+                { name: 'Cherry Juice', url: './images/products/26-50/30_cherry_juice.png', level: 30 },
+                { name: 'Fishing Net', url: './images/products/26-50/30_fishing_net.png', level: 30 },
+                { name: 'Mystery Net', url: './images/products/26-50/30_mystery_net.png', level: 30 },
                 
                 // Row 5
-                { name: 'Tomato Juice', url: 'https://static.wikia.nocookie.net/hayday/images/a/a5/Tomato_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223064831', level: 31 },
-                { name: 'Berry Juice', url: 'https://static.wikia.nocookie.net/hayday/images/3/3a/Berry_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223063542', level: 31 },
-                { name: 'Goat Feed', url: 'https://static.wikia.nocookie.net/hayday/images/e/ed/Goat_Feed.png/revision/latest/scale-to-width-down/75?cb=20150712161945', level: 32 },
-                { name: 'Goat Cheese', url: 'https://static.wikia.nocookie.net/hayday/images/c/c8/Goat_Cheese.png/revision/latest/scale-to-width-down/75?cb=20240205163401', level: 33 },
+                { name: 'Tomato Juice', url: './images/products/26-50/31_tomato_juice.png', level: 31 },
+                { name: 'Berry Juice', url: './images/products/26-50/31_berry_juice.png', level: 31 },
+                { name: 'Goat Feed', url: './images/products/26-50/32_goat_feed.png', level: 32 },
+                { name: 'Goat Cheese', url: './images/products/26-50/33_goat_cheese.png', level: 33 },
                 
                 // Row 6
-                { name: 'Pizza', url: 'https://static.wikia.nocookie.net/hayday/images/f/f4/Pizza.png/revision/latest/scale-to-width-down/75?cb=20240205074711', level: 33 },
-                { name: 'Coal', url: 'https://static.wikia.nocookie.net/hayday/images/a/a7/Coal.png/revision/latest/scale-to-width-down/75?cb=20150711233731', level: 33 },
-                { name: 'Refined Coal', url: 'https://static.wikia.nocookie.net/hayday/images/b/b5/Refined_Coal.png/revision/latest/scale-to-width-down/75?cb=20240208090929', level: 33 },
-                { name: 'Cherry Popsicle', url: 'https://static.wikia.nocookie.net/hayday/images/4/48/Cherry_Popsicle.png/revision/latest/scale-to-width-down/75?cb=20240411152842', level: 33 },
+                { name: 'Pizza', url: './images/products/26-50/33_pizza.png', level: 33 },
+                { name: 'Coal', url: './images/products/26-50/33_coal.png', level: 33 },
+                { name: 'Refined Coal', url: './images/products/26-50/33_refined_coal.png', level: 33 },
+                { name: 'Cherry Popsicle', url: './images/products/26-50/33_cherry_popsicle.png', level: 33 },
                 
                 // Row 7
-                { name: 'Feta Pie', url: 'https://static.wikia.nocookie.net/hayday/images/6/61/Feta_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207150211', level: 34 },
-                { name: 'Iron Ore', url: 'https://static.wikia.nocookie.net/hayday/images/8/87/Iron_Ore.png/revision/latest/scale-to-width-down/75?cb=20150711233632', level: 34 },
-                { name: 'Iron Bar', url: 'https://static.wikia.nocookie.net/hayday/images/6/6c/Iron_Bar.png/revision/latest/scale-to-width-down/75?cb=20240208090640', level: 34 },
-                { name: 'Strawberry Ice Cream', url: 'https://static.wikia.nocookie.net/hayday/images/8/8d/Strawberry_Ice_Cream.png/revision/latest/scale-to-width-down/75?cb=20240411152635', level: 34 },
+                { name: 'Feta Pie', url: './images/products/26-50/34_feta_pie.png', level: 34 },
+                { name: 'Iron Ore', url: './images/products/26-50/34_iron_ore.png', level: 34 },
+                { name: 'Iron Bar', url: './images/products/26-50/34_iron_bar.png', level: 34 },
+                { name: 'Strawberry Ice Cream', url: './images/products/26-50/34_strawberry_ice_cream.png', level: 34 },
                 
                 // Row 8
-                { name: 'Wheat Bundle', url: 'https://static.wikia.nocookie.net/hayday/images/5/5d/Wheat_Bundle.png/revision/latest/scale-to-width-down/75?cb=20170707203212', level: 34 },
-                { name: 'Meat Bucket', url: 'https://static.wikia.nocookie.net/hayday/images/5/5e/Meat_Bucket.png/revision/latest/scale-to-width-down/75?cb=20240411151118', level: 34 },
-                { name: 'Strawberry Cake', url: 'https://static.wikia.nocookie.net/hayday/images/1/1a/Strawberry_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223073929', level: 35 },
-                { name: 'Baked Potato', url: 'https://static.wikia.nocookie.net/hayday/images/1/11/Baked_Potato.png/revision/latest/scale-to-width-down/75?cb=20240205164314', level: 35 },
+                { name: 'Wheat Bundle', url: './images/products/26-50/34_wheat_bundle.png', level: 34 },
+                { name: 'Meat Bucket', url: './images/products/26-50/34_meat_bucket.png', level: 34 },
+                { name: 'Strawberry Cake', url: './images/products/26-50/35_strawberry_cake.png', level: 35 },
+                { name: 'Baked Potato', url: './images/products/26-50/35_baked_potato.png', level: 35 },
                 
                 // Row 9
-                { name: 'Apple Jam', url: 'https://static.wikia.nocookie.net/hayday/images/6/6c/Apple_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208151258', level: 35 },
-                { name: 'Chocolate Cake', url: 'https://static.wikia.nocookie.net/hayday/images/8/87/Chocolate_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223074025', level: 36 },
-                { name: 'Casserole', url: 'https://static.wikia.nocookie.net/hayday/images/b/b6/Casserole.png/revision/latest/scale-to-width-down/75?cb=20240207145740', level: 36 },
-                { name: 'Raspberry Jam', url: 'https://static.wikia.nocookie.net/hayday/images/8/84/Raspberry_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208151524', level: 36 },
+                { name: 'Apple Jam', url: './images/products/26-50/35_apple_jam.png', level: 35 },
+                { name: 'Chocolate Cake', url: './images/products/26-50/36_chocolate_cake.png', level: 36 },
+                { name: 'Casserole', url: './images/products/26-50/36_casserole.png', level: 36 },
+                { name: 'Raspberry Jam', url: './images/products/26-50/36_raspberry_jam.png', level: 36 },
                 
                 // Row 10
-                { name: 'Spicy Pizza', url: 'https://static.wikia.nocookie.net/hayday/images/5/5c/Spicy_Pizza.png/revision/latest/scale-to-width-down/75?cb=20240205083244', level: 37 },
-                { name: 'Blackberry Jam', url: 'https://static.wikia.nocookie.net/hayday/images/5/52/Blackberry_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208151625', level: 37 },
-                { name: 'Potato Feta Cake', url: 'https://static.wikia.nocookie.net/hayday/images/7/7c/Potato_Feta_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223074133', level: 38 },
-                { name: 'Cherry Jam', url: 'https://static.wikia.nocookie.net/hayday/images/5/53/Cherry_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208151724', level: 38 },
+                { name: 'Spicy Pizza', url: './images/products/26-50/37_spicy_pizza.png', level: 37 },
+                { name: 'Blackberry Jam', url: './images/products/26-50/37_blackberry_jam.png', level: 37 },
+                { name: 'Potato Feta Cake', url: './images/products/26-50/38_potato_feta_cake.png', level: 38 },
+                { name: 'Cherry Jam', url: './images/products/26-50/38_cherry_jam.png', level: 38 },
                 
                 // Row 11
-                { name: 'Bracelet', url: 'https://static.wikia.nocookie.net/hayday/images/3/33/Bracelet.png/revision/latest/scale-to-width-down/75?cb=20240208162033', level: 38 },
-                { name: 'Potato Bread', url: 'https://static.wikia.nocookie.net/hayday/images/2/26/Potato_Bread.png/revision/latest/scale-to-width-down/75?cb=20240205083506', level: 39 },
-                { name: 'Shepherd\'s Pie', url: 'https://static.wikia.nocookie.net/hayday/images/b/b8/Shepherd%27s_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207150949', level: 39 },
-                { name: 'Chocolate Ice Cream', url: 'https://static.wikia.nocookie.net/hayday/images/4/41/Chocolate_Ice_Cream.png/revision/latest/scale-to-width-down/75?cb=20240411152825', level: 39 },
+                { name: 'Bracelet', url: './images/products/26-50/38_bracelet.png', level: 38 },
+                { name: 'Potato Bread', url: './images/products/26-50/39_potato_bread.png', level: 39 },
+                { name: 'Shepherd\'s Pie', url: './images/products/26-50/39_shepherds_pie.png', level: 39 },
+                { name: 'Chocolate Ice Cream', url: './images/products/26-50/39_chocolate_ice_cream.png', level: 39 },
                 
                 // Row 12
-                { name: 'Necklace', url: 'https://static.wikia.nocookie.net/hayday/images/3/3a/Necklace.png/revision/latest/scale-to-width-down/75?cb=20240208162414', level: 39 },
-                { name: 'Honey', url: 'https://static.wikia.nocookie.net/hayday/images/c/c6/Honey.png/revision/latest/scale-to-width-down/75?cb=20240209012557', level: 39 },
-                { name: 'Honey Popcorn', url: 'https://static.wikia.nocookie.net/hayday/images/b/b1/Honey_Popcorn.png/revision/latest/scale-to-width-down/75?cb=20240206170401', level: 40 },
-                { name: 'Diamond Ring', url: 'https://static.wikia.nocookie.net/hayday/images/a/a6/Diamond_Ring.png/revision/latest/scale-to-width-down/75?cb=20240208162131', level: 40 },
+                { name: 'Necklace', url: './images/products/26-50/39_necklace.png', level: 39 },
+                { name: 'Honey', url: './images/products/26-50/39_honey.png', level: 39 },
+                { name: 'Honey Popcorn', url: './images/products/26-50/40_honey_popcorn.png', level: 40 },
+                { name: 'Diamond Ring', url: './images/products/26-50/40_diamond_ring.png', level: 40 },
                 
                 // Row 13
-                { name: 'Fish and Chips', url: 'https://static.wikia.nocookie.net/hayday/images/e/ea/Fish_and_Chips.png/revision/latest/scale-to-width-down/75?cb=20191023233220', level: 41 },
-                { name: 'Iron Bracelet', url: 'https://static.wikia.nocookie.net/hayday/images/4/40/Iron_Bracelet.png/revision/latest/scale-to-width-down/75?cb=20240208162523', level: 41 },
-                { name: 'Espresso', url: 'https://static.wikia.nocookie.net/hayday/images/a/ad/Espresso.png/revision/latest/scale-to-width-down/75?cb=20240209012756', level: 42 },
-                { name: 'Honey Apple Cake', url: 'https://static.wikia.nocookie.net/hayday/images/1/16/Honey_Apple_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223074318', level: 42 },
+                { name: 'Fish and Chips', url: './images/products/26-50/41_fish_and_chips.png', level: 41 },
+                { name: 'Iron Bracelet', url: './images/products/26-50/41_iron_bracelet.png', level: 41 },
+                { name: 'Espresso', url: './images/products/26-50/42_espresso.png', level: 42 },
+                { name: 'Honey Apple Cake', url: './images/products/26-50/42_honey_apple_cake.png', level: 42 },
                 
                 // Row 14
-                { name: 'Caffè Latte', url: 'https://static.wikia.nocookie.net/hayday/images/6/6e/Caff%C3%A8_Latte.png/revision/latest/scale-to-width-down/75?cb=20240209012944', level: 43 },
-                { name: 'Chocolate Popcorn', url: 'https://static.wikia.nocookie.net/hayday/images/0/09/Chocolate_Popcorn.png/revision/latest/scale-to-width-down/75?cb=20240206170316', level: 44 },
-                { name: 'Lobster Trap', url: 'https://static.wikia.nocookie.net/hayday/images/3/38/Lobster_Trap.png/revision/latest/scale-to-width-down/75?cb=20150725035512', level: 44 },
-                { name: 'Frutti di Mare Pizza', url: 'https://static.wikia.nocookie.net/hayday/images/5/5f/Frutti_di_Mare_Pizza.png/revision/latest/scale-to-width-down/75?cb=20240205083710', level: 45 },
+                { name: 'Caffè Latte', url: './images/products/26-50/43_caffe_latte.png', level: 43 },
+                { name: 'Chocolate Popcorn', url: './images/products/26-50/44_chocolate_popcorn.png', level: 44 },
+                { name: 'Lobster Trap', url: './images/products/26-50/44_lobster_trap.png', level: 44 },
+                { name: 'Frutti di Mare Pizza', url: './images/products/26-50/45_frutti_di_mare_pizza.png', level: 45 },
                 
                 // Row 15
-                { name: 'Caffè Mocha', url: 'https://static.wikia.nocookie.net/hayday/images/c/c7/Caff%C3%A8_Mocha.png/revision/latest/scale-to-width-down/75?cb=20240209012852', level: 45 },
-                { name: 'Soothing Pad', url: 'https://static.wikia.nocookie.net/hayday/images/c/c0/Soothing_Pad.png/revision/latest/scale-to-width-down/75?cb=20241209182716', level: 45 },
-                { name: 'Raspberry Mocha', url: 'https://static.wikia.nocookie.net/hayday/images/5/5c/Raspberry_Mocha.png/revision/latest/scale-to-width-down/75?cb=20180223180014', level: 46 },
-                { name: 'Lobster Soup', url: 'https://static.wikia.nocookie.net/hayday/images/5/59/Lobster_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209021219', level: 46 },
+                { name: 'Caffè Mocha', url: './images/products/26-50/45_caffe_mocha.png', level: 45 },
+                { name: 'Soothing Pad', url: './images/products/26-50/45_soothing_pad.png', level: 45 },
+                { name: 'Raspberry Mocha', url: './images/products/26-50/46_raspberry_mocha.png', level: 46 },
+                { name: 'Lobster Soup', url: './images/products/26-50/46_lobster_soup.png', level: 46 },
                 
                 // Row 16
-                { name: 'Hot Chocolate', url: 'https://static.wikia.nocookie.net/hayday/images/b/b0/Hot_Chocolate.png/revision/latest/scale-to-width-down/75?cb=20240209013139', level: 47 },
-                { name: 'Tomato Soup', url: 'https://static.wikia.nocookie.net/hayday/images/d/dc/Tomato_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209023225', level: 47 },
-                { name: 'Red Scarf', url: 'https://static.wikia.nocookie.net/hayday/images/4/4f/Red_Scarf.png/revision/latest/scale-to-width-down/75?cb=20240207160030', level: 48 },
-                { name: 'Lobster Skewer', url: 'https://static.wikia.nocookie.net/hayday/images/6/62/Lobster_Skewer.png/revision/latest/scale-to-width-down/75?cb=20240223075812', level: 48 },
+                { name: 'Hot Chocolate', url: './images/products/26-50/47_hot_chocolate.png', level: 47 },
+                { name: 'Tomato Soup', url: './images/products/26-50/47_tomato_soup.png', level: 47 },
+                { name: 'Red Scarf', url: './images/products/26-50/48_red_scarf.png', level: 48 },
+                { name: 'Lobster Skewer', url: './images/products/26-50/48_lobster_skewer.png', level: 48 },
                 
                 // Row 17
-                { name: 'Beeswax', url: 'https://static.wikia.nocookie.net/hayday/images/e/e4/Beeswax.png/revision/latest/scale-to-width-down/75?cb=20240209012642', level: 48 },
-                { name: 'Strawberry Candle', url: 'https://static.wikia.nocookie.net/hayday/images/2/21/Strawberry_Candle.png/revision/latest/scale-to-width-down/75?cb=20240209023413', level: 48 },
-                { name: 'Pumpkin Soup', url: 'https://static.wikia.nocookie.net/hayday/images/5/59/Pumpkin_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209023128', level: 49 },
-                { name: 'Rustic Bouquet', url: 'https://static.wikia.nocookie.net/hayday/images/9/93/Rustic_Bouquet.png/revision/latest/scale-to-width-down/75?cb=20240209042055', level: 49 },
+                { name: 'Beeswax', url: './images/products/26-50/48_beeswax.png', level: 48 },
+                { name: 'Strawberry Candle', url: './images/products/26-50/48_strawberry_candle.png', level: 48 },
+                { name: 'Pumpkin Soup', url: './images/products/26-50/49_pumpkin_soup.png', level: 49 },
+                { name: 'Rustic Bouquet', url: './images/products/26-50/49_rustic_bouquet.png', level: 49 },
                 
                 // Row 18
-                { name: 'Asparagus Quiche', url: 'https://static.wikia.nocookie.net/hayday/images/4/4b/Asparagus_Quiche.png/revision/latest/scale-to-width-down/75?cb=20240207145524', level: 49 },
-                { name: 'Strawberry Jam', url: 'https://static.wikia.nocookie.net/hayday/images/4/40/Strawberry_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208152746', level: 50 },
-                { name: 'Duck Trap', url: 'https://static.wikia.nocookie.net/hayday/images/a/a7/Duck_Trap.png/revision/latest/scale-to-width-down/75?cb=20150725035639', level: 50 },
-                { name: 'Sesame Ice Cream', url: 'https://static.wikia.nocookie.net/hayday/images/7/77/Sesame_Ice_Cream.png/revision/latest/scale-to-width-down/75?cb=20240208110210', level: 50 },
+                { name: 'Asparagus Quiche', url: './images/products/26-50/49_asparagus_quiche.png', level: 49 },
+                { name: 'Strawberry Jam', url: './images/products/26-50/50_strawberry_jam.png', level: 50 },
+                { name: 'Duck Trap', url: './images/products/26-50/50_duck_trap.png', level: 50 },
+                { name: 'Sesame Ice Cream', url: './images/products/26-50/50_sesame_ice_cream.png', level: 50 },
                 
                 // المستوى 51-75
                 // Row 1
-                { name: 'Caramel Apple', url: 'https://static.wikia.nocookie.net/hayday/images/2/24/Caramel_Apple.png/revision/latest/scale-to-width-down/75?cb=20240210053517', level: 51 },
-                { name: 'Pillow', url: 'https://static.wikia.nocookie.net/hayday/images/3/36/Pillow.png/revision/latest/scale-to-width-down/75?cb=20240411151249', level: 51 },
-                { name: 'Asparagus Soup', url: 'https://static.wikia.nocookie.net/hayday/images/8/83/Asparagus_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209021345', level: 51 },
-                { name: 'Toffee', url: 'https://static.wikia.nocookie.net/hayday/images/2/29/Toffee.png/revision/latest/scale-to-width-down/75?cb=20240210054552', level: 52 },
+                { name: 'Caramel Apple', url: './images/products/51-75/51_caramel_apple.png', level: 51 },
+                { name: 'Pillow', url: './images/products/51-75/51_pillow.png', level: 51 },
+                { name: 'Asparagus Soup', url: './images/products/51-75/51_asparagus_soup.png', level: 51 },
+                { name: 'Toffee', url: './images/products/51-75/52_toffee.png', level: 52 },
                 
                 // Row 2
-                { name: 'Raspberry Candle', url: 'https://static.wikia.nocookie.net/hayday/images/6/6c/Raspberry_Candle.png/revision/latest/scale-to-width-down/75?cb=20180211175650', level: 52 },
-                { name: 'Pineapple Juice', url: 'https://static.wikia.nocookie.net/hayday/images/f/fd/Pineapple_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223064929', level: 52 },
-                { name: 'Fish Soup', url: 'https://static.wikia.nocookie.net/hayday/images/b/be/Fish_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209022047', level: 53 },
-                { name: 'Soy Sauce', url: 'https://static.wikia.nocookie.net/hayday/images/9/97/Soy_Sauce.png/revision/latest/scale-to-width-down/75?cb=20240210055302', level: 54 },
+                { name: 'Raspberry Candle', url: './images/products/51-75/52_raspberry_candle.png', level: 52 },
+                { name: 'Pineapple Juice', url: './images/products/51-75/52_pineapple_juice.png', level: 52 },
+                { name: 'Fish Soup', url: './images/products/51-75/53_fish_soup.png', level: 53 },
+                { name: 'Soy Sauce', url: './images/products/51-75/54_soy_sauce.png', level: 54 },
                 
                 // Row 3
-                { name: 'Chocolate', url: 'https://static.wikia.nocookie.net/hayday/images/d/df/Chocolate.png/revision/latest/scale-to-width-down/75?cb=20240210053728', level: 54 },
-                { name: 'Fancy Cake', url: 'https://static.wikia.nocookie.net/hayday/images/d/dd/Fancy_Cake.png/revision/latest/scale-to-width-down/75?cb=20240411150410', level: 54 },
-                { name: 'Sushi Roll', url: 'https://static.wikia.nocookie.net/hayday/images/c/cf/Sushi_Roll.png/revision/latest/scale-to-width-down/75?cb=20240210101804', level: 56 },
-                { name: 'Lollipop', url: 'https://static.wikia.nocookie.net/hayday/images/5/58/Lollipop.png/revision/latest/scale-to-width-down/75?cb=20240210054240', level: 57 },
+                { name: 'Chocolate', url: './images/products/51-75/54_chocolate.png', level: 54 },
+                { name: 'Fancy Cake', url: './images/products/51-75/54_fancy_cake.png', level: 54 },
+                { name: 'Sushi Roll', url: './images/products/51-75/56_sushi_roll.png', level: 56 },
+                { name: 'Lollipop', url: './images/products/51-75/57_lollipop.png', level: 57 },
                 
                 // Row 4
-                { name: 'Feta Salad', url: 'https://static.wikia.nocookie.net/hayday/images/9/96/Feta_Salad.png/revision/latest/scale-to-width-down/75?cb=20240211074202', level: 58 },
-                { name: 'Lobster Sushi', url: 'https://static.wikia.nocookie.net/hayday/images/7/7b/Lobster_Sushi.png/revision/latest/scale-to-width-down/75?cb=20240210102040', level: 59 },
-                { name: 'Blanket', url: 'https://static.wikia.nocookie.net/hayday/images/3/3b/Blanket.png/revision/latest/scale-to-width-down/75?cb=20240411145624', level: 59 },
-                { name: 'Jelly Beans', url: 'https://static.wikia.nocookie.net/hayday/images/e/ed/Jelly_Beans.png/revision/latest/scale-to-width-down/75?cb=20240210054020', level: 60 },
+                { name: 'Feta Salad', url: './images/products/51-75/58_feta_salad.png', level: 58 },
+                { name: 'Lobster Sushi', url: './images/products/51-75/59_lobster_sushi.png', level: 59 },
+                { name: 'Blanket', url: './images/products/51-75/59_blanket.png', level: 59 },
+                { name: 'Jelly Beans', url: './images/products/51-75/60_jelly_beans.png', level: 60 },
                 
                 // Row 5
-                { name: 'Olive Oil', url: 'https://static.wikia.nocookie.net/hayday/images/3/34/Olive_Oil.png/revision/latest/scale-to-width-down/75?cb=20240210055734', level: 60 },
-                { name: 'Garlic Bread', url: 'https://static.wikia.nocookie.net/hayday/images/7/7f/Garlic_Bread.png/revision/latest/scale-to-width-down/75?cb=20240411150635', level: 60 },
-                { name: 'Veggie Bagel', url: 'https://static.wikia.nocookie.net/hayday/images/1/14/Veggie_Bagel.png/revision/latest/scale-to-width-down/75?cb=20240211131010', level: 61 },
-                { name: 'BLT Salad', url: 'https://static.wikia.nocookie.net/hayday/images/e/eb/BLT_Salad.png/revision/latest/scale-to-width-down/75?cb=20240211074418', level: 62 },
+                { name: 'Olive Oil', url: './images/products/51-75/60_olive_oil.png', level: 60 },
+                { name: 'Garlic Bread', url: './images/products/51-75/60_garlic_bread.png', level: 60 },
+                { name: 'Veggie Bagel', url: './images/products/51-75/61_veggie_bagel.png', level: 61 },
+                { name: 'BLT Salad', url: './images/products/51-75/62_blt_salad.png', level: 62 },
                 
                 // Row 6
-                { name: 'Mayonnaise', url: 'https://static.wikia.nocookie.net/hayday/images/4/4e/Mayonnaise.png/revision/latest/scale-to-width-down/75?cb=20240210055543', level: 62 },
-                { name: 'Caramel Latte', url: 'https://static.wikia.nocookie.net/hayday/images/6/6a/Caramel_Latte.png/revision/latest/scale-to-width-down/75?cb=20240209013040', level: 62 },
-                { name: 'Egg Sushi', url: 'https://static.wikia.nocookie.net/hayday/images/9/9b/Egg_Sushi.png/revision/latest/scale-to-width-down/75?cb=20240210101954', level: 63 },
-                { name: 'Honey Peanuts', url: 'https://static.wikia.nocookie.net/hayday/images/a/ad/Honey_Peanuts.png/revision/latest/scale-to-width-down/75?cb=20240411150946', level: 63 },
+                { name: 'Mayonnaise', url: './images/products/51-75/62_mayonnaise.png', level: 62 },
+                { name: 'Caramel Latte', url: './images/products/51-75/62_caramel_latte.png', level: 62 },
+                { name: 'Egg Sushi', url: './images/products/51-75/63_egg_sushi.png', level: 63 },
+                { name: 'Honey Peanuts', url: './images/products/51-75/63_honey_peanuts.png', level: 63 },
                 
                 // Row 7
-                { name: 'Seafood Salad', url: 'https://static.wikia.nocookie.net/hayday/images/6/69/Seafood_Salad.png/revision/latest/scale-to-width-down/75?cb=20240211102556', level: 64 },
-                { name: 'Berry Smoothie', url: 'https://static.wikia.nocookie.net/hayday/images/a/a8/Berry_Smoothie.png/revision/latest/scale-to-width-down/75?cb=20240211171218', level: 64 },
-                { name: 'Snack Mix', url: 'https://static.wikia.nocookie.net/hayday/images/a/a3/Snack_Mix.png/revision/latest/scale-to-width-down/75?cb=20240411151336', level: 64 },
-                { name: 'Bacon Toast', url: 'https://static.wikia.nocookie.net/hayday/images/7/72/Bacon_Toast.png/revision/latest/scale-to-width-down/75?cb=20150711224147', level: 65 },
+                { name: 'Seafood Salad', url: './images/products/51-75/64_seafood_salad.png', level: 64 },
+                { name: 'Berry Smoothie', url: './images/products/51-75/64_berry_smoothie.png', level: 64 },
+                { name: 'Snack Mix', url: './images/products/51-75/64_snack_mix.png', level: 64 },
+                { name: 'Bacon Toast', url: './images/products/51-75/65_bacon_toast.png', level: 65 },
                 
                 // Row 8
-                { name: 'Bright Bouquet', url: 'https://static.wikia.nocookie.net/hayday/images/5/52/Bright_Bouquet.png/revision/latest/scale-to-width-down/75?cb=20240411145809', level: 65 },
-                { name: 'Pineapple Cake', url: 'https://static.wikia.nocookie.net/hayday/images/e/e1/Pineapple_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223074541', level: 65 },
-                { name: 'Chocolate Pie', url: 'https://static.wikia.nocookie.net/hayday/images/7/7c/Chocolate_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207145850', level: 65 },
-                { name: 'Cabbage Soup', url: 'https://static.wikia.nocookie.net/hayday/images/3/34/Cabbage_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209021929', level: 65 },
+                { name: 'Bright Bouquet', url: './images/products/51-75/65_bright_bouquet.png', level: 65 },
+                { name: 'Pineapple Cake', url: './images/products/51-75/65_pineapple_cake.png', level: 65 },
+                { name: 'Chocolate Pie', url: './images/products/51-75/65_chocolate_pie.png', level: 65 },
+                { name: 'Cabbage Soup', url: './images/products/51-75/65_cabbage_soup.png', level: 65 },
                 
                 // Row 9
-                { name: 'Lemon Curd', url: 'https://static.wikia.nocookie.net/hayday/images/e/ea/Lemon_Curd.png/revision/latest/scale-to-width-down/75?cb=20240210055448', level: 66 },
-                { name: 'Egg Sandwich', url: 'https://static.wikia.nocookie.net/hayday/images/8/81/Egg_Sandwich.png/revision/latest/scale-to-width-down/75?cb=20240211165444', level: 66 },
-                { name: 'Green Smoothie', url: 'https://static.wikia.nocookie.net/hayday/images/f/f6/Green_Smoothie.png/revision/latest/scale-to-width-down/75?cb=20240211171507', level: 66 },
-                { name: 'Olive Dip', url: 'https://static.wikia.nocookie.net/hayday/images/3/32/Olive_Dip.png/revision/latest/scale-to-width-down/75?cb=20240411151145', level: 66 },
+                { name: 'Lemon Curd', url: './images/products/51-75/66_lemon_curd.png', level: 66 },
+                { name: 'Egg Sandwich', url: './images/products/51-75/66_egg_sandwich.png', level: 66 },
+                { name: 'Green Smoothie', url: './images/products/51-75/66_green_smoothie.png', level: 66 },
+                { name: 'Olive Dip', url: './images/products/51-75/66_olive_dip.png', level: 66 },
                 
                 // Row 10
-                { name: 'Fresh Pasta', url: 'https://static.wikia.nocookie.net/hayday/images/9/93/Fresh_Pasta.png/revision/latest/scale-to-width-down/75?cb=20240211172634', level: 67 },
-                { name: 'Pasta Salad', url: 'https://static.wikia.nocookie.net/hayday/images/1/18/Pasta_Salad.png/revision/latest/scale-to-width-down/75?cb=20240211105704', level: 67 },
-                { name: 'Lemon Pie', url: 'https://static.wikia.nocookie.net/hayday/images/8/85/Lemon_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207150447', level: 67 },
-                { name: 'Grilled Asparagus', url: 'https://static.wikia.nocookie.net/hayday/images/c/cf/Grilled_Asparagus.png/revision/latest/scale-to-width-down/75?cb=20240223080059', level: 67 },
+                { name: 'Fresh Pasta', url: './images/products/51-75/67_fresh_pasta.png', level: 67 },
+                { name: 'Pasta Salad', url: './images/products/51-75/67_pasta_salad.png', level: 67 },
+                { name: 'Lemon Pie', url: './images/products/51-75/67_lemon_pie.png', level: 67 },
+                { name: 'Grilled Asparagus', url: './images/products/51-75/67_grilled_asparagus.png', level: 67 },
                 
                 // Row 11
-                { name: 'Grilled Onion', url: 'https://static.wikia.nocookie.net/hayday/images/7/70/Grilled_Onion.png/revision/latest/scale-to-width-down/75?cb=20191023233225', level: 68 },
-                { name: 'Lemon Cake', url: 'https://static.wikia.nocookie.net/hayday/images/6/6c/Lemon_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223074632', level: 68 },
-                { name: 'Peanut Butter Milkshake', url: 'https://static.wikia.nocookie.net/hayday/images/b/b7/Peanut_Butter_Milkshake.png/revision/latest/scale-to-width-down/50?cb=20240303131045', level: 68 },
-                { name: 'Tomato Sauce', url: 'https://static.wikia.nocookie.net/hayday/images/0/09/Tomato_Sauce.png/revision/latest/scale-to-width-down/75?cb=20240210060131', level: 68 },
+                { name: 'Grilled Onion', url: './images/products/51-75/68_grilled_onion.png', level: 68 },
+                { name: 'Lemon Cake', url: './images/products/51-75/68_lemon_cake.png', level: 68 },
+                { name: 'Peanut Butter Milkshake', url: './images/products/51-75/68_peanut_butter_milkshake.png', level: 68 },
+                { name: 'Tomato Sauce', url: './images/products/51-75/68_tomato_sauce.png', level: 68 },
                 
                 // Row 12
-                { name: 'Lemon Essential Oil', url: 'https://static.wikia.nocookie.net/hayday/images/9/9a/Lemon_Essential_Oil.png/revision/latest/scale-to-width-down/75?cb=20240428095756', level: 68 },
-                { name: 'Honey Toast', url: 'https://static.wikia.nocookie.net/hayday/images/6/6d/Honey_Toast.png/revision/latest/scale-to-width-down/75?cb=20240211164950', level: 69 },
-                { name: 'Fried Rice', url: 'https://static.wikia.nocookie.net/hayday/images/6/61/Fried_Rice.png/revision/latest/scale-to-width-down/75?cb=20240411150556', level: 69 },
-                { name: 'Yogurt Smoothie', url: 'https://static.wikia.nocookie.net/hayday/images/d/d2/Yogurt_Smoothie.png/revision/latest/scale-to-width-down/75?cb=20240211171944', level: 69 },
+                { name: 'Lemon Essential Oil', url: './images/products/51-75/68_lemon_essential_oil.png', level: 68 },
+                { name: 'Honey Toast', url: './images/products/51-75/69_honey_toast.png', level: 69 },
+                { name: 'Fried Rice', url: './images/products/51-75/69_fried_rice.png', level: 69 },
+                { name: 'Yogurt Smoothie', url: './images/products/51-75/69_yogurt_smoothie.png', level: 69 },
                 
                 // Row 13
-                { name: 'Cloche Hat', url: 'https://static.wikia.nocookie.net/hayday/images/1/1e/Cloche_Hat.png/revision/latest/scale-to-width-down/75?cb=20180223175734', level: 70 },
-                { name: 'Cucumber Smoothie', url: 'https://static.wikia.nocookie.net/hayday/images/5/57/Cucumber_Smoothie.png/revision/latest/scale-to-width-down/75?cb=20190129164559', level: 70 },
-                { name: 'Orange Juice', url: 'https://static.wikia.nocookie.net/hayday/images/7/7e/Orange_Juice.png/revision/latest/scale-to-width-down/75?cb=20240223065838', level: 69 },
-                { name: 'Flower Shawl', url: 'https://static.wikia.nocookie.net/hayday/images/6/66/Flower_Shawl.png/revision/latest/scale-to-width-down/75?cb=20240207160117', level: 69 },
+                { name: 'Cloche Hat', url: './images/products/51-75/70_cloche_hat.png', level: 70 },
+                { name: 'Cucumber Smoothie', url: './images/products/51-75/70_cucumber_smoothie.png', level: 70 },
+                { name: 'Orange Juice', url: './images/products/51-75/69_orange_juice.png', level: 69 },
+                { name: 'Flower Shawl', url: './images/products/51-75/69_flower_shawl.png', level: 69 },
                 
                 // Row 14
-                { name: 'Peanut Butter and Jelly Sandwich', url: 'https://static.wikia.nocookie.net/hayday/images/6/69/Peanut_Butter_and_Jelly_Sandwich.png/revision/latest/scale-to-width-down/75?cb=20240411151207', level: 71 },
-                { name: 'Onion Soup', url: 'https://static.wikia.nocookie.net/hayday/images/0/05/Onion_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209022621', level: 71 },
-                { name: 'Lemon Candle', url: 'https://static.wikia.nocookie.net/hayday/images/8/8a/Lemon_Candle.png/revision/latest/scale-to-width-down/75?cb=20240209023630', level: 70 },
-                { name: 'Top Hat', url: 'https://static.wikia.nocookie.net/hayday/images/8/8d/Top_Hat.png/revision/latest/scale-to-width-down/75?cb=20240211173933', level: 70 },
+                { name: 'Peanut Butter and Jelly Sandwich', url: './images/products/51-75/71_peanut_butter_and_jelly_sandwich.png', level: 71 },
+                { name: 'Onion Soup', url: './images/products/51-75/71_onion_soup.png', level: 71 },
+                { name: 'Lemon Candle', url: './images/products/51-75/70_lemon_candle.png', level: 70 },
+                { name: 'Top Hat', url: './images/products/51-75/70_top_hat.png', level: 70 },
                 
                 // Row 15
-                { name: 'Gnocchi', url: 'https://static.wikia.nocookie.net/hayday/images/8/81/Gnocchi.png/revision/latest/scale-to-width-down/75?cb=20240211175230', level: 72 },
-                { name: 'Winter Veggies', url: 'https://static.wikia.nocookie.net/hayday/images/0/08/Winter_Veggies.png/revision/latest/scale-to-width-down/75?cb=20240411151607', level: 72 },
-                { name: 'Noodle Soup', url: 'https://static.wikia.nocookie.net/hayday/images/8/86/Noodle_Soup.png/revision/latest/scale-to-width-down/75?cb=20240209022516', level: 71 },
-                { name: 'Rice Noodles', url: 'https://static.wikia.nocookie.net/hayday/images/2/20/Rice_Noodles.png/revision/latest/scale-to-width-down/75?cb=20240211172740', level: 71 },
+                { name: 'Gnocchi', url: './images/products/51-75/72_gnocchi.png', level: 72 },
+                { name: 'Winter Veggies', url: './images/products/51-75/72_winter_veggies.png', level: 72 },
+                { name: 'Noodle Soup', url: './images/products/51-75/71_noodle_soup.png', level: 71 },
+                { name: 'Rice Noodles', url: './images/products/51-75/71_rice_noodles.png', level: 71 },
                 
                 // Row 16
-                { name: 'Gracious Bouquet', url: 'https://static.wikia.nocookie.net/hayday/images/8/82/Gracious_Bouquet.png/revision/latest/scale-to-width-down/75?cb=20240411150713', level: 73 },
-                { name: 'Marmalade', url: 'https://static.wikia.nocookie.net/hayday/images/e/ed/Marmalade.png/revision/latest/scale-to-width-down/75?cb=20240208152141', level: 73 },
-                { name: 'Sun Hat', url: 'https://static.wikia.nocookie.net/hayday/images/4/4c/Sun_Hat.png/revision/latest/scale-to-width-down/75?cb=20240211173826', level: 72 },
-                { name: 'Veggie Lasagna', url: 'https://static.wikia.nocookie.net/hayday/images/d/d1/Veggie_Lasagna.png/revision/latest/scale-to-width-down/75?cb=20240211180053', level: 72 },
+                { name: 'Gracious Bouquet', url: './images/products/51-75/73_gracious_bouquet.png', level: 73 },
+                { name: 'Marmalade', url: './images/products/51-75/73_marmalade.png', level: 73 },
+                { name: 'Sun Hat', url: './images/products/51-75/72_sun_hat.png', level: 72 },
+                { name: 'Veggie Lasagna', url: './images/products/51-75/72_veggie_lasagna.png', level: 72 },
                 
                 // Row 17
-                { name: 'Veggie Platter', url: 'https://static.wikia.nocookie.net/hayday/images/7/7d/Veggie_Platter.png/revision/latest/scale-to-width-down/75?cb=20240211105316', level: 74 },
-                { name: 'Chamomile Essential Oil', url: 'https://static.wikia.nocookie.net/hayday/images/5/53/Chamomile_Essential_Oil.png/revision/latest/scale-to-width-down/60?cb=20241209181229', level: 74 },
-                { name: 'Hot Dog', url: 'https://static.wikia.nocookie.net/hayday/images/8/82/Hot_Dog.png/revision/latest/scale-to-width-down/75?cb=20240211180755', level: 73 },
-                { name: 'Coleslaw', url: 'https://static.wikia.nocookie.net/hayday/images/e/e1/Coleslaw.png/revision/latest/scale-to-width-down/75?cb=20240411150158', level: 73 },
+                { name: 'Veggie Platter', url: './images/products/51-75/74_veggie_platter.png', level: 74 },
+                { name: 'Chamomile Essential Oil', url: './images/products/51-75/74_chamomile_essential_oil.png', level: 74 },
+                { name: 'Hot Dog', url: './images/products/51-75/73_hot_dog.png', level: 73 },
+                { name: 'Coleslaw', url: './images/products/51-75/73_coleslaw.png', level: 73 },
                 
                 // Row 18
-                { name: 'Cotton Candy', url: 'https://static.wikia.nocookie.net/hayday/images/6/67/Cotton_Candy.png/revision/latest/scale-to-width-down/75?cb=20240210053918', level: 75 },
+                { name: 'Cotton Candy', url: './images/products/51-75/75_cotton_candy.png', level: 75 },
                 
                 
                 // المستوى 76-100
                 // Row 1
-                { name: 'Peach Tart', url: 'https://static.wikia.nocookie.net/hayday/images/0/07/Peach_Tart.png/revision/latest/scale-to-width-down/75?cb=20240207150814', level: 76 },
-                { name: 'Big Sushi Roll', url: 'https://static.wikia.nocookie.net/hayday/images/a/a9/Big_Sushi_Roll.png/revision/latest/scale-to-width-down/75?cb=20240210101848', level: 76 },
-                { name: 'Tofu Dog', url: 'https://static.wikia.nocookie.net/hayday/images/f/fa/Tofu_Dog.png/revision/latest/scale-to-width-down/75?cb=20180222234446', level: 76 },
-                { name: 'Beetroot Salad', url: 'https://static.wikia.nocookie.net/hayday/images/f/ff/Beetroot_Salad.png/revision/latest/scale-to-width-down/75?cb=20240411145459', level: 76 },
+                { name: 'Peach Tart', url: './images/products/76-100/76_peach_tart.png', level: 76 },
+                { name: 'Big Sushi Roll', url: './images/products/76-100/76_big_sushi_roll.png', level: 76 },
+                { name: 'Tofu Dog', url: './images/products/76-100/76_tofu_dog.png', level: 76 },
+                { name: 'Beetroot Salad', url: './images/products/76-100/76_beetroot_salad.png', level: 76 },
                 
                 // Row 2
-                { name: 'Plain Donut', url: 'https://static.wikia.nocookie.net/hayday/images/0/08/Plain_Donut.png/revision/latest/scale-to-width-down/75?cb=20240212101437', level: 76 },
-                { name: 'Salsa', url: 'https://static.wikia.nocookie.net/hayday/images/1/1e/Salsa.png/revision/latest/scale-to-width-down/75?cb=20240210055852', level: 77 },
-                { name: 'Taco', url: 'https://static.wikia.nocookie.net/hayday/images/4/4d/Taco.png/revision/latest/scale-to-width-down/75?cb=20240212102658', level: 77 },
-                { name: 'Colourful Omelet', url: 'https://static.wikia.nocookie.net/hayday/images/6/65/Colourful_Omelet.png/revision/latest/scale-to-width-down/75?cb=20240212104001', level: 77 },
+                { name: 'Plain Donut', url: './images/products/76-100/76_plain_donut.png', level: 76 },
+                { name: 'Salsa', url: './images/products/76-100/77_salsa.png', level: 77 },
+                { name: 'Taco', url: './images/products/76-100/77_taco.png', level: 77 },
+                { name: 'Colourful Omelet', url: './images/products/76-100/77_colourful_omelet.png', level: 77 },
                 
                 // Row 3
-                { name: 'Spring Omelet', url: 'https://static.wikia.nocookie.net/hayday/images/f/f2/Spring_Omelet.png/revision/latest/scale-to-width-down/75?cb=20240212104155', level: 77 },
-                { name: 'Orange Sorbet', url: 'https://static.wikia.nocookie.net/hayday/images/1/11/Orange_Sorbet.png/revision/latest/scale-to-width-down/75?cb=20240411152737', level: 78 },
-                { name: 'Corn Dog', url: 'https://static.wikia.nocookie.net/hayday/images/1/15/Corn_Dog.png/revision/latest/scale-to-width-down/75?cb=20240211180913', level: 78 },
-                { name: 'Potato Soup', url: 'https://static.wikia.nocookie.net/hayday/images/a/ab/Potato_Soup.png/revision/latest/scale-to-width-down/75?cb=20240303134341', level: 78 },
+                { name: 'Spring Omelet', url: './images/products/76-100/77_spring_omelet.png', level: 77 },
+                { name: 'Orange Sorbet', url: './images/products/76-100/78_orange_sorbet.png', level: 78 },
+                { name: 'Corn Dog', url: './images/products/76-100/78_corn_dog.png', level: 78 },
+                { name: 'Potato Soup', url: './images/products/76-100/78_potato_soup.png', level: 78 },
                 
                 // Row 4
-                { name: 'Summer Rolls', url: 'https://static.wikia.nocookie.net/hayday/images/7/74/Summer_Rolls.png/revision/latest/scale-to-width-down/75?cb=20240211110030', level: 78 },
-                { name: 'Sesame Brittle', url: 'https://static.wikia.nocookie.net/hayday/images/6/65/Sesame_Brittle.png/revision/latest/scale-to-width-down/75?cb=20240210054437', level: 78 },
-                { name: 'Affogato', url: 'https://static.wikia.nocookie.net/hayday/images/f/fc/Affogato.png/revision/latest/scale-to-width-down/75?cb=20240208103914', level: 78 },
-                { name: 'Fish Taco', url: 'https://static.wikia.nocookie.net/hayday/images/d/d5/Fish_Taco.png/revision/latest/scale-to-width-down/75?cb=20240212102746', level: 79 },
+                { name: 'Summer Rolls', url: './images/products/76-100/78_summer_rolls.png', level: 78 },
+                { name: 'Sesame Brittle', url: './images/products/76-100/78_sesame_brittle.png', level: 78 },
+                { name: 'Affogato', url: './images/products/76-100/78_affogato.png', level: 78 },
+                { name: 'Fish Taco', url: './images/products/76-100/79_fish_taco.png', level: 79 },
                 
                 // Row 5
-                { name: 'Peach Jam', url: 'https://static.wikia.nocookie.net/hayday/images/b/be/Peach_Jam.png/revision/latest/scale-to-width-down/75?cb=20240208152501', level: 79 },
-                { name: 'Lobster Pasta', url: 'https://static.wikia.nocookie.net/hayday/images/5/5a/Lobster_Pasta.png/revision/latest/scale-to-width-down/75?cb=20240211175632', level: 79 },
-                { name: 'Cucumber Sandwich', url: 'https://static.wikia.nocookie.net/hayday/images/b/b4/Cucumber_Sandwich.png/revision/latest/scale-to-width-down/75?cb=20240211170159', level: 79 },
-                { name: 'Spicy Fish', url: 'https://static.wikia.nocookie.net/hayday/images/7/71/Spicy_Fish.png/revision/latest/scale-to-width-down/75?cb=20240411151355', level: 79 },
+                { name: 'Peach Jam', url: './images/products/76-100/79_peach_jam.png', level: 79 },
+                { name: 'Lobster Pasta', url: './images/products/76-100/79_lobster_pasta.png', level: 79 },
+                { name: 'Cucumber Sandwich', url: './images/products/76-100/79_cucumber_sandwich.png', level: 79 },
+                { name: 'Spicy Fish', url: './images/products/76-100/79_spicy_fish.png', level: 79 },
                 
                 // Row 6
-                { name: 'Sprinkled Donut', url: 'https://static.wikia.nocookie.net/hayday/images/4/40/Sprinkled_Donut.png/revision/latest/scale-to-width-down/75?cb=20240212101844', level: 79 },
-                { name: 'Cheese Omelet', url: 'https://static.wikia.nocookie.net/hayday/images/c/c2/Cheese_Omelet.png/revision/latest/scale-to-width-down/75?cb=20240212103833', level: 79 },
-                { name: 'Green Tea', url: 'https://static.wikia.nocookie.net/hayday/images/8/8f/Green_Tea.png/revision/latest/scale-to-width-down/75?cb=20240212110927', level: 80 },
-                { name: 'Onion Dog', url: 'https://static.wikia.nocookie.net/hayday/images/e/e8/Onion_Dog.png/revision/latest/scale-to-width-down/75?cb=20240211181128', level: 80 },
+                { name: 'Sprinkled Donut', url: './images/products/76-100/79_sprinkled_donut.png', level: 79 },
+                { name: 'Cheese Omelet', url: './images/products/76-100/79_cheese_omelet.png', level: 79 },
+                { name: 'Green Tea', url: './images/products/76-100/80_green_tea.png', level: 80 },
+                { name: 'Onion Dog', url: './images/products/76-100/80_onion_dog.png', level: 80 },
                 
                 // Row 7
-                { name: 'Stuffed Peppers', url: 'https://static.wikia.nocookie.net/hayday/images/0/06/Stuffed_Peppers.png/revision/latest/scale-to-width-down/75?cb=20240411151408', level: 80 },
-                { name: 'Fresh Diffuser', url: 'https://static.wikia.nocookie.net/hayday/images/2/2f/Fresh_Diffuser.png/revision/latest/scale-to-width-down/50?cb=20241209194636', level: 110 },
-                { name: 'Rice Ball', url: 'https://static.wikia.nocookie.net/hayday/images/1/1d/Rice_Ball.png/revision/latest/scale-to-width-down/75?cb=20210907213244', level: 110 },
-                { name: 'Guava Cupcake', url: 'https://static.wikia.nocookie.net/hayday/images/9/9e/Guava_Cupcake.png/revision/latest/scale-to-width-down/75?cb=20240411150749', level: 109 },
-                { name: 'Peanut Fudge', url: 'https://static.wikia.nocookie.net/hayday/images/2/2d/Peanut_Fudge.png/revision/latest/scale-to-width-down/75?cb=20220428150457', level: 111 },
+                { name: 'Stuffed Peppers', url: './images/products/76-100/80_stuffed_peppers.png', level: 80 },
                 
-                // Row 8
-                { name: 'Winter Stew', url: 'https://static.wikia.nocookie.net/hayday/images/e/e3/Winter_Stew.png/revision/latest/scale-to-width-down/75?cb=20240411151558', level: 112 },
-                { name: 'Tropical Cupcake', url: 'https://static.wikia.nocookie.net/hayday/images/9/9b/Tropical_Cupcake.png/revision/latest/scale-to-width-down/75?cb=20240411151452', level: 112 },
-                { name: 'Zesty Perfume', url: 'https://static.wikia.nocookie.net/hayday/images/a/ac/Zesty_Perfume.png/revision/latest/scale-to-width-down/50?cb=20241209193805', level: 111 },
-                { name: 'Cookie Cupcake', url: 'https://static.wikia.nocookie.net/hayday/images/8/86/Cookie_Cupcake.png/revision/latest/scale-to-width-down/75?cb=20250112061229', level: 111 },
-                { name: 'Calming Diffuser', url: 'https://static.wikia.nocookie.net/hayday/images/d/d3/Calming_Diffuser.png/revision/latest/scale-to-width-down/50?cb=20241209194317', level: 116 },
-                { name: 'Orange Salad', url: 'https://static.wikia.nocookie.net/hayday/images/b/bb/Orange_Salad.png/revision/latest/scale-to-width-down/75?cb=20240211105603', level: 117 },
                 
-                // Row 10
-                { name: 'Chocolate Waffles', url: 'https://static.wikia.nocookie.net/hayday/images/4/4d/Chocolate_Waffles.png/revision/latest/scale-to-width-down/75?cb=20240217133520', level: 117 },
-                { name: 'Breakfast Waffles', url: 'https://static.wikia.nocookie.net/hayday/images/5/59/Breakfast_Waffles.png/revision/latest/scale-to-width-down/75?cb=20240217133249', level: 119 },
-                { name: 'Breakfast Bowl', url: 'https://static.wikia.nocookie.net/hayday/images/2/2e/Breakfast_Bowl.png/revision/latest/scale-to-width-down/75?cb=20240411145742', level: 119 },
-                { name: 'Apple Porridge', url: 'https://static.wikia.nocookie.net/hayday/images/d/d3/Apple_Porridge.png/revision/latest/scale-to-width-down/75?cb=20240217161228', level: 119 },
+                // المستوى 101-125
+                // Row 1
+                { name: 'Fresh Diffuser', url: './images/products/101-125/110_fresh_diffuser.png', level: 110 },
+                { name: 'Rice Ball', url: './images/products/101-125/110_rice_ball.png', level: 110 },
+                { name: 'Guava Cupcake', url: './images/products/101-125/109_guava_cupcake.png', level: 109 },
+                { name: 'Peanut Fudge', url: './images/products/101-125/111_peanut_fudge.png', level: 111 },
                 
-                // Row 11
-                { name: 'Pineapple Coconut Bars', url: 'https://static.wikia.nocookie.net/hayday/images/6/61/Pineapple_Coconut_Bars.png/revision/latest/scale-to-width-down/75?cb=20240205084133', level: 120 },
-                { name: 'Sweet Porridge', url: 'https://static.wikia.nocookie.net/hayday/images/f/fb/Sweet_Porridge.png/revision/latest/scale-to-width-down/75?cb=20240217161407', level: 120 },
-                { name: 'Rich Soap', url: 'https://static.wikia.nocookie.net/hayday/images/2/2e/Rich_Soap.png/revision/latest/scale-to-width-down/75?cb=20240212124127', level: 121 },
-                { name: 'Fresh Porridge', url: 'https://static.wikia.nocookie.net/hayday/images/0/09/Fresh_Porridge.png/revision/latest/scale-to-width-down/75?cb=20240217161318', level: 122 },
+                // Row 2
+                { name: 'Winter Stew', url: './images/products/101-125/112_winter_stew.png', level: 112 },
+                { name: 'Tropical Cupcake', url: './images/products/101-125/112_tropical_cupcake.png', level: 112 },
+                { name: 'Zesty Perfume', url: './images/products/101-125/111_zesty_perfume.png', level: 111 },
+                { name: 'Cookie Cupcake', url: './images/products/101-125/111_cookie_cupcake.png', level: 111 },
+                { name: 'Calming Diffuser', url: './images/products/101-125/116_calming_diffuser.png', level: 116 },
+                { name: 'Orange Salad', url: './images/products/101-125/117_orange_salad.png', level: 117 },
                 
-                // Row 12
-                { name: 'Vanilla Milkshake', url: 'https://static.wikia.nocookie.net/hayday/images/1/14/Vanilla_Milkshake.png/revision/latest/scale-to-width-down/75?cb=20240217094936', level: 124 },
-                { name: 'Mocha Milkshake', url: 'https://static.wikia.nocookie.net/hayday/images/7/7d/Mocha_Milkshake.png/revision/latest/scale-to-width-down/75?cb=20240217095145', level: 125 },
+                // Row 3
+                { name: 'Chocolate Waffles', url: './images/products/101-125/117_chocolate_waffles.png', level: 117 },
+                { name: 'Breakfast Waffles', url: './images/products/101-125/119_breakfast_waffles.png', level: 119 },
+                { name: 'Breakfast Bowl', url: './images/products/101-125/119_breakfast_bowl.png', level: 119 },
+                { name: 'Apple Porridge', url: './images/products/101-125/119_apple_porridge.png', level: 119 },
+                
+                // Row 4
+                { name: 'Pineapple Coconut Bars', url: './images/products/101-125/120_pineapple_coconut_bars.png', level: 120 },
+                { name: 'Sweet Porridge', url: './images/products/101-125/120_sweet_porridge.png', level: 120 },
+                { name: 'Rich Soap', url: './images/products/101-125/121_rich_soap.png', level: 121 },
+                { name: 'Fresh Porridge', url: './images/products/101-125/122_fresh_porridge.png', level: 122 },
+                
+                // Row 5
+                { name: 'Vanilla Milkshake', url: './images/products/101-125/124_vanilla_milkshake.png', level: 124 },
+                { name: 'Mocha Milkshake', url: './images/products/101-125/125_mocha_milkshake.png', level: 125 },
                 
                 
                 // المستوى 126-150
                 // Row 1
-                { name: 'Fruity Milkshake', url: 'https://static.wikia.nocookie.net/hayday/images/f/fb/Fruity_Milkshake.png/revision/latest/scale-to-width-down/75?cb=20240217095037', level: 126 },
+                { name: 'Fruity Milkshake', url: './images/products/126-150/126_fruity_milkshake.png', level: 126 },
                 
             ];
             
