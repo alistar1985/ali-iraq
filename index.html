@@ -15,8 +15,15 @@
     <main>
         <section id="control-panel">
             <button id="fetch-images-btn" class="btn">جلب صور المنتجات</button>
+            <button id="download-all-btn" class="btn">تحميل كل الصور</button>
             <div id="status-message"></div>
             <div id="loading-spinner" class="hidden"></div>
+            <div id="download-progress" class="hidden">
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <div id="progress-text">0%</div>
+            </div>
         </section>
         
         <section id="products-sections">

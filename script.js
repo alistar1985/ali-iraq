@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     // عناصر واجهة المستخدم
     const fetchImagesBtn = document.getElementById('fetch-images-btn');
+    const downloadAllBtn = document.getElementById('download-all-btn');
     const statusMessage = document.getElementById('status-message');
     const sectionHeaders = document.querySelectorAll('.section-header');
     const sectionContents = document.querySelectorAll('.section-content');
     const loadingSpinner = document.getElementById('loading-spinner');
+    const downloadProgress = document.getElementById('download-progress');
+    const progressBar = document.getElementById('progress-fill');
+    const progressText = document.getElementById('progress-text');
     const levelButtons = document.querySelectorAll('.section-header'); // أزرار المستويات
     
     // مصفوفة لتخزين بيانات الصور
@@ -16,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // إضافة مستمعي الأحداث للأزرار
     fetchImagesBtn.addEventListener('click', fetchProductImages);
+    downloadAllBtn.addEventListener('click', downloadAllImages);
     
     // تحميل المنتجات تلقائياً عند تحميل الصفحة
     fetchProductImages();
@@ -108,64 +113,64 @@ document.addEventListener('DOMContentLoaded', function() {
             productImages = [
                 // المستوى 1-25
                 // Row 1
-                { name: 'Bread', url: 'https://static.wikia.nocookie.net/hayday/images/e/e1/Bread.png/revision/latest/scale-to-width-down/75?cb=20240205073518', level: 2 },
-                { name: 'Chicken Feed', url: 'https://static.wikia.nocookie.net/hayday/images/6/6a/Chicken_Feed.png/revision/latest/scale-to-width-down/75?cb=20150712161950', level: 3 },
-                { name: 'Cow Feed', url: 'https://static.wikia.nocookie.net/hayday/images/f/f6/Cow_Feed.png/revision/latest/scale-to-width-down/75?cb=20150712161956', level: 6 },
-                { name: 'Cream', url: 'https://static.wikia.nocookie.net/hayday/images/8/83/Cream.png/revision/latest/scale-to-width-down/75?cb=20240205163032', level: 6 },
+                { name: 'Bread', url: './images/products/1-25/2_bread.png', level: 2 },
+                { name: 'Chicken Feed', url: './images/products/1-25/3_chicken_feed.png', level: 3 },
+                { name: 'Cow Feed', url: './images/products/1-25/6_cow_feed.png', level: 6 },
+                { name: 'Cream', url: './images/products/1-25/6_cream.png', level: 6 },
                 
                 // Row 2
-                { name: 'Corn Bread', url: 'https://static.wikia.nocookie.net/hayday/images/1/1d/Corn_Bread.png/revision/latest/scale-to-width-down/75?cb=20240205073836', level: 7 },
-                { name: 'Brown Sugar', url: 'https://static.wikia.nocookie.net/hayday/images/0/02/Brown_Sugar.png/revision/latest/scale-to-width-down/75?cb=20240205163705', level: 7 },
-                { name: 'Popcorn', url: 'https://static.wikia.nocookie.net/hayday/images/8/85/Popcorn.png/revision/latest/scale-to-width-down/75?cb=20240206170036', level: 8 },
-                { name: 'Butter', url: 'https://static.wikia.nocookie.net/hayday/images/f/f1/Butter.png/revision/latest/scale-to-width-down/75?cb=20240205163128', level: 9 },
+                { name: 'Corn Bread', url: './images/products/1-25/7_corn_bread.png', level: 7 },
+                { name: 'Brown Sugar', url: './images/products/1-25/7_brown_sugar.png', level: 7 },
+                { name: 'Popcorn', url: './images/products/1-25/8_popcorn.png', level: 8 },
+                { name: 'Butter', url: './images/products/1-25/9_butter.png', level: 9 },
                 
                 // Row 3
                 { name: 'Plain Waffles', url: 'https://static.wikia.nocookie.net/hayday/images/6/66/Plain_Waffles.png/revision/latest/scale-to-width-down/75?cb=20240217133029', level: 114 },
-                { name: 'Pig Feed', url: 'https://static.wikia.nocookie.net/hayday/images/e/e4/Pig_Feed.png/revision/latest/scale-to-width-down/75?cb=20150712161939', level: 10 },
-                { name: 'Cookie', url: 'https://static.wikia.nocookie.net/hayday/images/7/70/Cookie.png/revision/latest/scale-to-width-down/75?cb=20240205074046', level: 10 },
-                { name: 'Bacon and Eggs', url: 'https://static.wikia.nocookie.net/hayday/images/a/a6/Bacon_and_Eggs.png/revision/latest/scale-to-width-down/75?cb=20240205164211', level: 11 },
+                { name: 'Pig Feed', url: './images/products/1-25/10_pig_feed.png', level: 10 },
+                { name: 'Cookie', url: './images/products/1-25/10_cookie.png', level: 10 },
+                { name: 'Bacon and Eggs', url: './images/products/1-25/11_bacon_and_eggs.png', level: 11 },
                 
                 // Row 4
-                { name: 'Cheese', url: 'https://static.wikia.nocookie.net/hayday/images/a/a5/Cheese.png/revision/latest/scale-to-width-down/75?cb=20240205163241', level: 12 },
-                { name: 'White Sugar', url: 'https://static.wikia.nocookie.net/hayday/images/f/ff/White_Sugar.png/revision/latest/scale-to-width-down/75?cb=20240205163815', level: 13 },
-                { name: 'Carrot Pie', url: 'https://static.wikia.nocookie.net/hayday/images/0/0b/Carrot_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207083902', level: 14 },
-                { name: 'Pumpkin Pie', url: 'https://static.wikia.nocookie.net/hayday/images/7/7d/Pumpkin_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207150900', level: 15 },
+                { name: 'Cheese', url: './images/products/1-25/12_cheese.png', level: 12 },
+                { name: 'White Sugar', url: './images/products/1-25/13_white_sugar.png', level: 13 },
+                { name: 'Carrot Pie', url: './images/products/1-25/14_carrot_pie.png', level: 14 },
+                { name: 'Pumpkin Pie', url: './images/products/1-25/15_pumpkin_pie.png', level: 15 },
                 
                 // Row 5
-                { name: 'Sheep Feed', url: 'https://static.wikia.nocookie.net/hayday/images/5/58/Sheep_Feed.png/revision/latest/scale-to-width-down/75?cb=20150712162003', level: 16 },
-                { name: 'Buttered Popcorn', url: 'https://static.wikia.nocookie.net/hayday/images/8/88/Buttered_Popcorn.png/revision/latest/scale-to-width-down/75?cb=20240206170136', level: 16 },
-                { name: 'Sweater', url: 'https://static.wikia.nocookie.net/hayday/images/7/73/Sweater.png/revision/latest/scale-to-width-down/75?cb=20240207155705', level: 17 },
-                { name: 'Bacon Pie', url: 'https://static.wikia.nocookie.net/hayday/images/b/b4/Bacon_Pie.png/revision/latest/scale-to-width-down/75?cb=20240207145633', level: 18 },
+                { name: 'Sheep Feed', url: './images/products/1-25/16_sheep_feed.png', level: 16 },
+                { name: 'Buttered Popcorn', url: './images/products/1-25/16_buttered_popcorn.png', level: 16 },
+                { name: 'Sweater', url: './images/products/1-25/17_sweater.png', level: 17 },
+                { name: 'Bacon Pie', url: './images/products/1-25/18_bacon_pie.png', level: 18 },
                 
                 // Row 6
-                { name: 'Syrup', url: 'https://static.wikia.nocookie.net/hayday/images/2/2f/Syrup.png/revision/latest/scale-to-width-down/75?cb=20240205163903', level: 18 },
-                { name: 'Cotton Fabric', url: 'https://static.wikia.nocookie.net/hayday/images/0/01/Cotton_Fabric.png/revision/latest/scale-to-width-down/75?cb=20240207155935', level: 18 },
-                { name: 'Hamburger', url: 'https://static.wikia.nocookie.net/hayday/images/a/a4/Hamburger.png/revision/latest/scale-to-width-down/75?cb=20191023233032', level: 18 },
-                { name: 'Raspberry Muffin', url: 'https://static.wikia.nocookie.net/hayday/images/2/22/Raspberry_Muffin.png/revision/latest/scale-to-width-down/75?cb=20240205074215', level: 19 },
+                { name: 'Syrup', url: './images/products/1-25/18_syrup.png', level: 18 },
+                { name: 'Cotton Fabric', url: './images/products/1-25/18_cotton_fabric.png', level: 18 },
+                { name: 'Hamburger', url: './images/products/1-25/18_hamburger.png', level: 18 },
+                { name: 'Raspberry Muffin', url: './images/products/1-25/19_raspberry_muffin.png', level: 19 },
                 
                 // Row 7
-                { name: 'Blue Woolly Hat', url: 'https://static.wikia.nocookie.net/hayday/images/0/03/Blue_Woolly_Hat.png/revision/latest/scale-to-width-down/75?cb=20240207155851', level: 19 },
-                { name: 'Cotton Shirt', url: 'https://static.wikia.nocookie.net/hayday/images/6/66/Cotton_Shirt.png/revision/latest/scale-to-width-down/75?cb=20150711231709', level: 19 },
-                { name: 'Blue Sweater', url: 'https://static.wikia.nocookie.net/hayday/images/3/37/Blue_Sweater.png/revision/latest/scale-to-width-down/75?cb=20240207155757', level: 20 },
-                { name: 'Carrot Cake', url: 'https://static.wikia.nocookie.net/hayday/images/d/dd/Carrot_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223073206', level: 21 },
+                { name: 'Blue Woolly Hat', url: './images/products/1-25/19_blue_woolly_hat.png', level: 19 },
+                { name: 'Cotton Shirt', url: './images/products/1-25/19_cotton_shirt.png', level: 19 },
+                { name: 'Blue Sweater', url: './images/products/1-25/20_blue_sweater.png', level: 20 },
+                { name: 'Carrot Cake', url: './images/products/1-25/21_carrot_cake.png', level: 21 },
                 
                 // Row 8
-                { name: 'Wooly Chaps', url: 'https://static.wikia.nocookie.net/hayday/images/2/22/Wooly_Chaps.png/revision/latest/scale-to-width-down/75?cb=20150711231659', level: 21 },
-                { name: 'Cream Cake', url: 'https://static.wikia.nocookie.net/hayday/images/7/73/Cream_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223073301', level: 23 },
-                { name: 'Red Berry Cake', url: 'https://static.wikia.nocookie.net/hayday/images/6/69/Red_Berry_Cake.png/revision/latest/scale-to-width-down/75?cb=20240223073738', level: 23 },
-                { name: 'Cheesecake', url: 'https://static.wikia.nocookie.net/hayday/images/2/2d/Cheesecake.png/revision/latest/scale-to-width-down/75?cb=20240223073836', level: 24 },
+                { name: 'Wooly Chaps', url: './images/products/1-25/21_wooly_chaps.png', level: 21 },
+                { name: 'Cream Cake', url: './images/products/1-25/23_cream_cake.png', level: 23 },
+                { name: 'Red Berry Cake', url: './images/products/1-25/23_red_berry_cake.png', level: 23 },
+                { name: 'Cheesecake', url: './images/products/1-25/24_cheesecake.png', level: 24 },
                 
                 // Row 9
-                { name: 'Silver Ore', url: 'https://static.wikia.nocookie.net/hayday/images/9/97/Silver_Ore.png/revision/latest/scale-to-width-down/75?cb=20150711233621', level: 24 },
-                { name: 'Gold Ore', url: 'https://static.wikia.nocookie.net/hayday/images/f/f7/Gold_Ore.png/revision/latest/scale-to-width-down/75?cb=20240208090745', level: 24 },
-                { name: 'Platinum Ore', url: 'https://static.wikia.nocookie.net/hayday/images/b/b0/Platinum_Ore.png/revision/latest/scale-to-width-down/75?cb=20240208090844', level: 24 },
-                { name: 'Silver Bar', url: 'https://static.wikia.nocookie.net/hayday/images/9/94/Silver_Bar.png/revision/latest/scale-to-width-down/75?cb=20240208090436', level: 24 },
+                { name: 'Silver Ore', url: './images/products/1-25/24_silver_ore.png', level: 24 },
+                { name: 'Gold Ore', url: './images/products/1-25/24_gold_ore.png', level: 24 },
+                { name: 'Platinum Ore', url: './images/products/1-25/24_platinum_ore.png', level: 24 },
+                { name: 'Silver Bar', url: './images/products/1-25/24_silver_bar.png', level: 24 },
                 
                 // Row 10
-                { name: 'Chili Popcorn', url: 'https://static.wikia.nocookie.net/hayday/images/7/7c/Chili_Popcorn.png/revision/latest/scale-to-width-down/75?cb=20240206170227', level: 25 },
-                { name: 'Gold Bar', url: 'https://static.wikia.nocookie.net/hayday/images/4/4e/Gold_Bar.png/revision/latest/scale-to-width-down/75?cb=20240208090745', level: 25 },
-                { name: 'Platinum Bar', url: 'https://static.wikia.nocookie.net/hayday/images/d/d2/Platinum_Bar.png/revision/latest/scale-to-width-down/75?cb=20240208090844', level: 25 },
-                { name: 'Violet Dress', url: 'https://static.wikia.nocookie.net/hayday/images/3/33/Violet_Dress.png/revision/latest/scale-to-width-down/75?cb=20240411152554', level: 25 },
+                { name: 'Chili Popcorn', url: './images/products/1-25/25_chili_popcorn.png', level: 25 },
+                { name: 'Gold Bar', url: './images/products/1-25/25_gold_bar.png', level: 25 },
+                { name: 'Platinum Bar', url: './images/products/1-25/25_platinum_bar.png', level: 25 },
+                { name: 'Violet Dress', url: './images/products/1-25/25_violet_dress.png', level: 25 },
                 
                 // المستوى 26-50
                 // Row 1
@@ -492,27 +497,42 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // إنشاء صورة المنتج
         const img = document.createElement('img');
-        // تعديل رابط الصورة ليعمل عبر CORS
-        // استخدام رابط مباشر بدون معلمات وإضافة بروكسي CORS إذا لزم الأمر
         const originalUrl = productData.url;
-        // إزالة معلمات الاستعلام
-        const cleanUrl = originalUrl.split('?')[0];
-        // استخدام بروكسي CORS للصور
-        const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
-        // تجربة الرابط المباشر أولاً
-        img.src = cleanUrl;
-        img.alt = productData.name;
-        img.loading = 'lazy'; // تحميل الصور بشكل تدريجي
-        img.crossOrigin = 'anonymous'; // السماح بالتحميل عبر CORS
-        img.onerror = function() {
-            // في حالة فشل تحميل الصورة، جرب استخدام بروكسي CORS
-            this.onerror = function() {
-                // إذا فشل البروكسي أيضًا، استخدم صورة بديلة
+        
+        // التحقق مما إذا كانت الصورة محلية أو خارجية
+        const isLocalImage = originalUrl.startsWith('./') || originalUrl.startsWith('../') || originalUrl.startsWith('/');
+        
+        if (isLocalImage) {
+            // للصور المحلية، استخدم المسار كما هو
+            img.src = originalUrl;
+            img.alt = productData.name;
+            img.loading = 'lazy'; // تحميل الصور بشكل تدريجي
+            img.onerror = function() {
+                // إذا فشل تحميل الصورة المحلية، استخدم صورة بديلة
                 this.src = 'https://via.placeholder.com/100x100?text=' + encodeURIComponent(productData.name);
+                console.error('فشل تحميل الصورة المحلية:', originalUrl);
             };
-            // جرب استخدام البروكسي
-            this.src = corsProxyUrl + cleanUrl;
-        };
+        } else {
+            // للصور الخارجية، استخدم نفس المنطق السابق
+            // إزالة معلمات الاستعلام
+            const cleanUrl = originalUrl.split('?')[0];
+            // استخدام بروكسي CORS للصور
+            const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
+            // تجربة الرابط المباشر أولاً
+            img.src = cleanUrl;
+            img.alt = productData.name;
+            img.loading = 'lazy'; // تحميل الصور بشكل تدريجي
+            img.crossOrigin = 'anonymous'; // السماح بالتحميل عبر CORS
+            img.onerror = function() {
+                // في حالة فشل تحميل الصورة، جرب استخدام بروكسي CORS
+                this.onerror = function() {
+                    // إذا فشل البروكسي أيضًا، استخدم صورة بديلة
+                    this.src = 'https://via.placeholder.com/100x100?text=' + encodeURIComponent(productData.name);
+                };
+                // جرب استخدام البروكسي
+                this.src = corsProxyUrl + cleanUrl;
+            };
+        }
         
         // إنشاء اسم المنتج
         const nameDiv = document.createElement('div');
@@ -654,6 +674,173 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // إظهار رسالة ترحيبية
     statusMessage.textContent = 'انقر على زر "جلب صور المنتجات" للبدء.';
+    
+    // دالة تحميل جميع الصور دفعة واحدة
+    async function downloadAllImages() {
+        // التحقق من وجود صور للتحميل
+        if (!productsLoaded || productImages.length === 0) {
+            statusMessage.textContent = 'يجب جلب صور المنتجات أولاً قبل التحميل';
+            statusMessage.style.color = '#e74c3c';
+            setTimeout(() => {
+                statusMessage.style.color = '';
+            }, 3000);
+            return;
+        }
+        
+        // تعطيل زر التحميل وإظهار شريط التقدم
+        downloadAllBtn.disabled = true;
+        downloadProgress.classList.remove('hidden');
+        progressBar.style.width = '0%';
+        progressText.textContent = '0%';
+        statusMessage.textContent = 'جارٍ تحميل جميع الصور...';
+        statusMessage.style.color = '#3498db';
+        
+        // التحقق من وجود مكتبة JSZip
+        if (typeof JSZip === 'undefined') {
+            // تحميل مكتبة JSZip ديناميكياً
+            statusMessage.textContent = 'جارٍ تحميل مكتبة الضغط...';
+            
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+            script.onload = function() {
+                // بعد تحميل المكتبة، ابدأ عملية التحميل
+                statusMessage.textContent = 'تم تحميل مكتبة الضغط بنجاح، جارٍ تحميل الصور...';
+                setTimeout(() => processDownload(), 500); // انتظر قليلاً للتأكد من تحميل المكتبة
+            };
+            script.onerror = function() {
+                statusMessage.textContent = 'فشل تحميل مكتبة الضغط. حاول مرة أخرى لاحقاً.';
+                statusMessage.style.color = '#e74c3c';
+                downloadAllBtn.disabled = false;
+                downloadProgress.classList.add('hidden');
+            };
+            document.head.appendChild(script);
+        } else {
+            // المكتبة موجودة بالفعل، ابدأ عملية التحميل
+            processDownload();
+        }
+        
+        async function processDownload() {
+            try {
+                // التأكد من أن JSZip متاح قبل استخدامه
+                if (typeof JSZip === 'undefined') {
+                    throw new Error('مكتبة JSZip غير متوفرة. يرجى تحديث الصفحة والمحاولة مرة أخرى.');
+                }
+                
+                const zip = new JSZip();
+                const totalImages = productImages.length;
+                let completedImages = 0;
+                
+                // إنشاء مجلدات للمستويات المختلفة
+                const levelFolders = {};
+                
+                // تقسيم المنتجات حسب نطاق المستوى
+                const levelRanges = [
+                    { min: 1, max: 25 },
+                    { min: 26, max: 50 },
+                    { min: 51, max: 75 },
+                    { min: 76, max: 100 },
+                    { min: 101, max: 125 },
+                    { min: 126, max: 150 }
+                ];
+                
+                // إنشاء المجلدات في ملف ZIP
+                levelRanges.forEach(range => {
+                    const folderName = `مستوى_${range.min}-${range.max}`;
+                    levelFolders[`${range.min}-${range.max}`] = zip.folder(folderName);
+                });
+                
+                // تحميل كل صورة وإضافتها إلى المجلد المناسب
+                const downloadPromises = productImages.map(async (product, index) => {
+                    try {
+                        // تحديد المجلد المناسب للمنتج بناءً على المستوى
+                        let targetFolder = null;
+                        for (const range of levelRanges) {
+                            if (product.level >= range.min && product.level <= range.max) {
+                                targetFolder = levelFolders[`${range.min}-${range.max}`];
+                                break;
+                            }
+                        }
+                        
+                        // إذا لم يتم العثور على مجلد مناسب، استخدم المجلد الرئيسي
+                        if (!targetFolder) {
+                            targetFolder = zip;
+                        }
+                        
+                        // تنظيف الرابط من معلمات الاستعلام
+                        const cleanUrl = product.url.split('?')[0];
+                        
+                        // تحميل الصورة
+                        const response = await fetch(cleanUrl, { mode: 'cors', credentials: 'omit' });
+                        if (!response.ok) {
+                            throw new Error(`فشل تحميل ${product.name}: ${response.statusText}`);
+                        }
+                        
+                        const blob = await response.blob();
+                        
+                        // إضافة الصورة إلى المجلد المناسب
+                        const fileName = `${product.level}_${product.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.png`;
+                        targetFolder.file(fileName, blob);
+                        
+                        // تحديث التقدم
+                        completedImages++;
+                        const progress = Math.round((completedImages / totalImages) * 100);
+                        progressBar.style.width = `${progress}%`;
+                        progressText.textContent = `${progress}%`;
+                        
+                        // تحديث رسالة الحالة كل 10 صور
+                        if (completedImages % 10 === 0 || completedImages === totalImages) {
+                            statusMessage.textContent = `جارٍ تحميل الصور: ${completedImages} من ${totalImages}`;
+                        }
+                    } catch (error) {
+                        console.error(`فشل تحميل ${product.name}:`, error);
+                        // استمر بالتحميل حتى مع وجود أخطاء
+                        completedImages++;
+                        const progress = Math.round((completedImages / totalImages) * 100);
+                        progressBar.style.width = `${progress}%`;
+                        progressText.textContent = `${progress}%`;
+                    }
+                });
+                
+                // انتظار اكتمال جميع عمليات التحميل
+                await Promise.all(downloadPromises);
+                
+                // إنشاء ملف ZIP وتحميله
+                const zipBlob = await zip.generateAsync({ type: 'blob' });
+                const zipUrl = URL.createObjectURL(zipBlob);
+                
+                // إنشاء رابط للتحميل
+                const downloadLink = document.createElement('a');
+                downloadLink.href = zipUrl;
+                downloadLink.download = `Hay_Day_Products_${new Date().toISOString().slice(0, 10)}.zip`;
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                
+                // تنظيف الموارد
+                setTimeout(() => {
+                    document.body.removeChild(downloadLink);
+                    URL.revokeObjectURL(zipUrl);
+                    
+                    // تحديث رسالة الحالة
+                    statusMessage.textContent = `تم تحميل ${completedImages} صورة بنجاح!`;
+                    statusMessage.style.color = '#2ecc71';
+                    
+                    // إعادة تفعيل الزر وإخفاء شريط التقدم بعد فترة
+                    setTimeout(() => {
+                        downloadAllBtn.disabled = false;
+                        downloadProgress.classList.add('hidden');
+                        statusMessage.style.color = '';
+                    }, 3000);
+                }, 100);
+                
+            } catch (error) {
+                console.error('حدث خطأ أثناء تحميل الصور:', error);
+                statusMessage.textContent = `حدث خطأ أثناء تحميل الصور: ${error.message}`;
+                statusMessage.style.color = '#e74c3c';
+                downloadAllBtn.disabled = false;
+                downloadProgress.classList.add('hidden');
+            }
+        }
+    }
     
     // دالة تصفية المنتجات حسب نطاق المستوى
     function filterProductsByLevel(minLevel, maxLevel) {
