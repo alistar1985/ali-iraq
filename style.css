@@ -394,12 +394,28 @@ main {
     transform: scale(1.05);
 }
 
+.product-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
 .product-name {
     color: var(--primary-dark);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0.5rem;
     font-size: 1.1rem;
+}
+
+.arabic-name {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.english-name {
+    font-size: 0.9em;
+    color: var(--text-secondary);
 }
 
 .product-level {

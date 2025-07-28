@@ -437,11 +437,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Peanut Fudge', url: './images/products/101-125/111_peanut_fudge.png', level: 111 },
                 
                 // Row 2
-                { name: 'Winter Stew', url: './images/products/101-125/112_winter_stew.png', level: 112 },
-                { name: 'Tropical Cupcake', url: './images/products/101-125/112_tropical_cupcake.png', level: 112 },
-                { name: 'Plain Waffles', url: './images/products/101-125/114_plain_waffles.png', level: 114 },
-                { name: 'Zesty Perfume', url: './images/products/101-125/111_zesty_perfume.png', level: 111 },
-                { name: 'Cookie Cupcake', url: './images/products/101-125/111_cookie_cupcake.png', level: 111 },
+                { name: 'Winter Stew', arabicName: 'يخني الشتاء', url: './images/products/101-125/112_winter_stew.png', level: 112 },
+                { name: 'Tropical Cupcake', arabicName: 'كب كيك استوائي', url: './images/products/101-125/112_tropical_cupcake.png', level: 112 },
+                { name: 'Plain Waffles', arabicName: 'وافل سادة', url: './images/products/101-125/114_plain_waffles.png', level: 114 },
+                { name: 'Zesty Perfume', arabicName: 'عطر منعش', url: './images/products/101-125/111_zesty_perfume.png', level: 111 },
+                { name: 'Cookie Cupcake', arabicName: 'كب كيك بالكوكيز', url: './images/products/101-125/111_cookie_cupcake.png', level: 111 },
                 { name: 'Calming Diffuser', url: './images/products/101-125/116_calming_diffuser.png', level: 116 },
                 { name: 'Orange Salad', url: './images/products/101-125/117_orange_salad.png', level: 117 },
                 
@@ -575,9 +575,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // لم نعد نحتاج إلى منطقة التفاصيل الموسعة بناءً على طلب المستخدم
         
+        // إضافة اسم المنتج الإنجليزي إلى حاوية الأسماء
+        namesContainer.appendChild(nameDiv);
+        
         // إضافة العناصر إلى البطاقة
         card.appendChild(img);
-        card.appendChild(nameDiv);
+        card.appendChild(namesContainer);
         card.appendChild(levelDiv);
         card.appendChild(downloadBtn);
         
