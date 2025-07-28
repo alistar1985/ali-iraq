@@ -27,19 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // إضافة مستمعي الأحداث لرؤوس الأقسام
     sectionHeaders.forEach(header => {
-        header.addEventListener('click', async function() {
-            // إذا لم تكن الصور محمّلة بعد، قم بتحميلها تلقائياً أولاً
+        header.addEventListener('click', async function(event) {
+            event.preventDefault();
+            
+            // تحميل الصور إذا لم تكن محملة
             if (!productsLoaded) {
                 statusMessage.textContent = 'جاري جلب صور المنتجات تلقائياً...';
-                // استدعاء دالة جلب الصور
                 await fetchProductImages();
-                // إذا فشل التحميل، توقف
                 if (!productsLoaded) {
                     statusMessage.textContent = 'فشل جلب صور المنتجات. حاول مرة أخرى.';
                     statusMessage.style.color = '#e74c3c';
-                    setTimeout(() => {
-                        statusMessage.style.color = '';
-                    }, 2000);
+                    setTimeout(() => statusMessage.style.color = '', 2000);
                     return;
                 }
             }
@@ -47,27 +45,30 @@ document.addEventListener('DOMContentLoaded', function() {
             const minLevel = parseInt(this.getAttribute('data-min-level'));
             const maxLevel = parseInt(this.getAttribute('data-max-level'));
             const sectionContent = this.nextElementSibling;
-            const isActive = sectionContent.classList.contains('active');
+            const wasActive = this.classList.contains('active');
             
             // إغلاق جميع الأقسام
             sectionHeaders.forEach(h => h.classList.remove('active'));
             sectionContents.forEach(c => c.classList.remove('active'));
             
-            // إذا كان القسم مفتوحاً بالفعل، أغلقه فقط
-            if (!isActive) {
-                // تحديد هذا القسم كنشط
+            // إذا لم يكن القسم نشطاً من قبل، افتحه
+            if (!wasActive) {
                 this.classList.add('active');
                 sectionContent.classList.add('active');
                 
-                // تصفية وعرض المنتجات المطابقة لنطاق المستوى
-                displayProductsByLevel(minLevel, maxLevel, sectionContent);
+                // تحميل المنتجات فقط إذا كان القسم فارغاً
+                if (sectionContent.children.length === 0) {
+                    displayProductsByLevel(minLevel, maxLevel, sectionContent);
+                }
                 
                 statusMessage.textContent = `تم عرض منتجات المستوى ${minLevel} - ${maxLevel}.`;
                 statusMessage.style.color = '#2ecc71';
-                setTimeout(() => {
-                    statusMessage.style.color = '';
-                }, 2000);
+            } else {
+                statusMessage.textContent = `تم إخفاء منتجات المستوى ${minLevel} - ${maxLevel}.`;
+                statusMessage.style.color = '#3498db';
             }
+            
+            setTimeout(() => statusMessage.style.color = '', 2000);
         });
     });
     
@@ -564,7 +565,18 @@ document.addEventListener('DOMContentLoaded', function() {
         card.appendChild(levelDiv);
         card.appendChild(downloadBtn);
         
-        // لم نعد نحتاج إلى حدث النقر للتوسيع بناءً على طلب المستخدم
+        // إضافة خاصية التبديل (إظهار/إخفاء) للمنتجات من المستوى 1-25
+        if (productData.level >= 1 && productData.level <= 25) {
+            card.addEventListener('click', function(e) {
+                // لا تقم بتنفيذ التبديل إذا كان النقر على زر التحميل
+                if (e.target === downloadBtn || downloadBtn.contains(e.target)) {
+                    return;
+                }
+                
+                // تبديل حالة العرض باستخدام فئة CSS فقط
+                cardContainer.classList.toggle('product-hidden');
+            });
+        }
         
         // إضافة البطاقة إلى الحاوية
         cardContainer.appendChild(card);

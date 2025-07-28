@@ -312,6 +312,17 @@ main {
     perspective: 1000px;
 }
 
+/* فئة للمنتجات المخفية - تحافظ على المساحة ولا تغير الترتيب */
+.product-container.product-hidden {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.product-container.product-hidden .product-item {
+    filter: grayscale(50%);
+    transform: scale(0.95);
+}
+
 .product-item {
     background-color: var(--background-card);
     border-radius: var(--border-radius);
