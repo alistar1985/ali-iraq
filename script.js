@@ -539,9 +539,21 @@ document.addEventListener('DOMContentLoaded', function() {
             };
         }
         
-        // إنشاء اسم المنتج
+        // إنشاء حاوية الأسماء
+        const namesContainer = document.createElement('div');
+        namesContainer.className = 'product-names';
+        
+        // إنشاء اسم المنتج بالعربي (إذا كان موجوداً)
+        if (productData.arabicName) {
+            const arabicNameDiv = document.createElement('div');
+            arabicNameDiv.className = 'product-name arabic-name';
+            arabicNameDiv.textContent = productData.arabicName;
+            namesContainer.appendChild(arabicNameDiv);
+        }
+        
+        // إنشاء اسم المنتج بالإنجليزي
         const nameDiv = document.createElement('div');
-        nameDiv.className = 'product-name';
+        nameDiv.className = 'product-name english-name';
         nameDiv.textContent = productData.name;
         
         // استخدام مستوى المنتج من بيانات المنتج مباشرة
