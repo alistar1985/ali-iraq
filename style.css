@@ -11,24 +11,27 @@
     padding: 16px 8px 28px 8px;
     width: 100%;
     background: transparent;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .top-info-left, .top-info-right {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 170px;
     min-height: 40px;
     padding: 6px 11px;
     border-radius: 16px;
     box-shadow: 0 1px 7px 0 rgba(60,120,60,0.06);
     font-size: 0.92rem;
-    background: linear-gradient(135deg, #e9fbe4 60%, #d2f5c9 100%); /* أخضر فاتح متدرج متناسق */
+    background: linear-gradient(135deg, #e9fbe4 60%, #d2f5c9 100%);
     border: 1px solid #b8e6a3;
     color: var(--primary-dark);
     transition: box-shadow 0.18s, border 0.18s;
     position: relative;
     margin: 0;
+    text-align: center;
 }
 
 .top-info-left a, .top-info-right a {
@@ -74,6 +77,9 @@
     .top-info-container {
         gap: 6px;
         padding: 10px 3px 18px 3px;
+        max-width: 95%;
+        flex-direction: row;
+        align-items: stretch;
     }
     .top-info-left, .top-info-right {
         width: 47vw;
@@ -81,6 +87,7 @@
         font-size: 0.88rem;
         padding: 5px 6px;
         border-radius: 12px;
+        justify-content: center;
     }
     .facebook-icon {
         width: 13px;
@@ -174,16 +181,106 @@ main {
 }
 
 #control-panel {
-    background-color: var(--background-card);
-    border-radius: var(--border-radius);
-    padding: 2rem;
-    margin-bottom: 2.5rem;
-    box-shadow: var(--shadow-medium);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
     text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     overflow: hidden;
-    border-left: 4px solid var(--primary-color);
-    border-right: 4px solid var(--primary-color);
+}
+
+#control-panel:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #28a745, #20c997, #17a2b8);
+    border-radius: 16px 16px 0 0;
+}
+
+#control-panel .btn {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    min-width: 180px;
+}
+
+#control-panel .btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+#control-panel .btn:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 123, 255, 0.4);
+}
+
+#control-panel .btn:hover:before {
+    left: 100%;
+}
+
+#control-panel .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+#control-panel .btn:disabled {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 6px rgba(108, 117, 125, 0.3);
+}
+
+@media (max-width: 768px) {
+    #control-panel {
+        max-width: 90%;
+        padding: 20px 20px;
+        margin-bottom: 25px;
+    }
+    
+    #control-panel .btn {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    #control-panel {
+        max-width: 95%;
+        padding: 18px 15px;
+        margin-bottom: 20px;
+    }
+    
+    #control-panel .btn {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+        min-width: 140px;
+    }
 }
 
 #products-sections {
@@ -978,5 +1075,701 @@ footer:before {
     
     .download-btn {
         font-size: 0.8rem;
+    }
+}
+
+/* =================================== */
+/*      Download All Section          */
+/* =================================== */
+
+.download-all-section {
+    margin-top: 40px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.download-all-section:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.download-all-btn {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-all-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.download-all-btn:hover {
+    background: linear-gradient(135deg, #218838 0%, #1ea085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(40, 167, 69, 0.4);
+}
+
+.download-all-btn:hover:before {
+    left: 100%;
+}
+
+.download-all-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.download-all-btn:disabled {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+}
+
+@media (max-width: 768px) {
+    .download-all-section {
+        margin-top: 30px;
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+    
+    .download-all-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-all-section {
+        margin-top: 25px;
+        padding: 20px 12px;
+    }
+    
+    .download-all-btn {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+}
+
+/* =================================== */
+/*      Rare Product Section          */
+/* =================================== */
+
+.rare-product-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-radius: 12px;
+    border: 1px solid #ffc107;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.1);
+    transition: all 0.3s ease;
+}
+
+.rare-product-section:hover {
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+    transform: translateY(-1px);
+}
+
+.rare-product-btn {
+    background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(255, 193, 7, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.rare-product-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.rare-product-btn:hover {
+    background: linear-gradient(135deg, #ff8f00 0%, #ff6f00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(255, 193, 7, 0.4);
+}
+
+.rare-product-btn:hover:before {
+    left: 100%;
+}
+
+.rare-product-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(255, 193, 7, 0.3);
+}
+
+.rare-product-btn:disabled {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 6px rgba(108, 117, 125, 0.3);
+}
+
+@media (max-width: 768px) {
+    .rare-product-section {
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .rare-product-btn {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rare-product-section {
+        margin-top: 12px;
+        padding: 12px;
+    }
+    
+    .rare-product-btn {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+
+/* =================================== */
+/*      Rare Product Modal            */
+/* =================================== */
+
+.rare-product-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: transparent;
+    border-radius: 16px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    box-shadow: none;
+    animation: slideIn 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+    color: #212529;
+    border-bottom: 1px solid #ffc107;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #212529;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.modal-body {
+    padding: 25px;
+    text-align: center;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-content img {
+    max-width: 60%;
+    max-height: 60vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: imageAppear 1s ease-out;
+    object-fit: contain;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.3) 80%, transparent 100%);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* =================================== */
+/*      Fireworks & Phone Frame      */
+/* =================================== */
+
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.firework {
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: firework 3s infinite;
+}
+
+.firework::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: fireworkExplosion 3s infinite;
+}
+
+@keyframes firework {
+    0% {
+        transform: translateY(0) scale(1);
+        background: #ff6b6b;
+        box-shadow: 0 0 10px #ff6b6b;
+    }
+    50% {
+        transform: translateY(-200px) scale(1.5);
+        background: #4ecdc4;
+        box-shadow: 0 0 20px #4ecdc4;
+    }
+    100% {
+        transform: translateY(-400px) scale(0);
+        background: #45b7d1;
+        box-shadow: 0 0 30px #45b7d1;
+    }
+}
+
+@keyframes fireworkExplosion {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(20);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(40);
+        opacity: 0;
+    }
+}
+
+.phone-frame {
+    display: inline-block;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    border-radius: 25px;
+    padding: 8px;
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.3),
+        inset 0 2px 5px rgba(255,255,255,0.1);
+    margin: 20px auto;
+    position: relative;
+    animation: phoneGlow 2s infinite;
+}
+
+.phone-screen {
+    width: 200px;
+    height: 350px;
+    background: #000;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.phone-screen::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.phone-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    animation: imageAppear 1s ease-out;
+}
+
+@keyframes phoneGlow {
+    0%, 100% {
+        box-shadow: 
+            0 10px 30px rgba(0,0,0,0.3),
+            inset 0 2px 5px rgba(255,255,255,0.1),
+            0 0 20px rgba(255, 193, 7, 0.3);
+    }
+    50% {
+        box-shadow: 
+            0 10px 30px rgba(0,0,0,0.3),
+            inset 0 2px 5px rgba(255,255,255,0.1),
+            0 0 40px rgba(255, 193, 7, 0.6);
+    }
+}
+
+.countdown {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff6b6b;
+    animation: countdownPulse 1s infinite;
+}
+
+@keyframes countdownPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.celebration-text {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-radius: 12px;
+    border: 2px solid #ffc107;
+    animation: celebrationPulse 2s infinite;
+}
+
+.celebration-text h4 {
+    margin: 0 0 10px 0;
+    color: #856404;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.celebration-text p {
+    margin: 0;
+    color: #856404;
+    font-size: 1rem;
+}
+
+@keyframes celebrationPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
+    }
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #212529;
+    animation: titleGlow 2s infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 193, 7, 0.8), 0 0 25px rgba(255, 193, 7, 0.4);
+    }
+}
+
+@keyframes imageAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .modal-content img {
+        max-width: 70%;
+        max-height: 50vh;
+        border-radius: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 98%;
+        max-height: 98%;
+    }
+    
+    .modal-content img {
+        max-width: 80%;
+        max-height: 45vh;
+        border-radius: 12px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .modal-content img {
+        max-width: 85%;
+        max-height: 40vh;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+/* =================================== */
+/*      Celebration Effects           */
+/* =================================== */
+
+.celebration-container {
+    position: relative;
+    text-align: center;
+}
+
+.sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 2rem;
+    animation: sparkle 2s infinite;
+    opacity: 0;
+}
+
+.sparkle:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.sparkle:nth-child(2) {
+    top: 20%;
+    right: 15%;
+    animation-delay: 0.4s;
+}
+
+.sparkle:nth-child(3) {
+    top: 60%;
+    left: 20%;
+    animation-delay: 0.8s;
+}
+
+.sparkle:nth-child(4) {
+    top: 40%;
+    right: 25%;
+    animation-delay: 1.2s;
+}
+
+.sparkle:nth-child(5) {
+    bottom: 20%;
+    left: 50%;
+    animation-delay: 1.6s;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) rotate(360deg);
+    }
+}
+
+.celebration-text {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-radius: 12px;
+    border: 2px solid #ffc107;
+    animation: celebrationPulse 2s infinite;
+}
+
+.celebration-text h4 {
+    margin: 0 0 10px 0;
+    color: #856404;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.celebration-text p {
+    margin: 0;
+    color: #856404;
+    font-size: 1rem;
+}
+
+@keyframes celebrationPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
+    }
+}
+
+.simple-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.simple-close-btn:hover {
+    background: rgba(255, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .simple-close-btn {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .simple-close-btn {
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
     }
 }
