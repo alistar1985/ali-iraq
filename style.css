@@ -1,60 +1,96 @@
-/* Top Info Corner Styles - Cleaned */
+/* =================================== */
+/*      Top Info Boxes - Modern Row    */
+/* =================================== */
+
+.top-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    padding: 16px 8px 28px 8px;
+    width: 100%;
+    background: transparent;
+}
+
 .top-info-left, .top-info-right {
-    position: fixed;
-    top: 15px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    box-shadow: var(--shadow-medium);
-    z-index: 1000;
-    font-size: 0.95rem;
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    border: 1px solid rgba(255,255,255,0.2);
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-}
-
-.top-info-left:hover, .top-info-right:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
-}
-
-.top-info-left {
-    left: 20px;
-}
-
-.top-info-right {
-    right: 20px;
-}
-
-.top-info-left p, .top-info-right p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 170px;
+    min-height: 40px;
+    padding: 6px 11px;
+    border-radius: 16px;
+    box-shadow: 0 1px 7px 0 rgba(60,120,60,0.06);
+    font-size: 0.92rem;
+    background: linear-gradient(135deg, #e9fbe4 60%, #d2f5c9 100%); /* أخضر فاتح متدرج متناسق */
+    border: 1px solid #b8e6a3;
+    color: var(--primary-dark);
+    transition: box-shadow 0.18s, border 0.18s;
+    position: relative;
     margin: 0;
 }
 
 .top-info-left a, .top-info-right a {
+    color: var(--primary-dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
     background: none !important;
     padding: 0 !important;
     box-shadow: none !important;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity var(--transition-speed);
+    font-size: 0.99em;
+    transition: opacity 0.16s;
 }
 
 .top-info-left a:hover, .top-info-right a:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .facebook-icon {
-    fill: white;
-    transition: transform var(--transition-speed);
+    fill: var(--primary-color);
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition: transform 0.16s;
 }
 
-.top-info-left a:hover .facebook-icon,
+.top-info-left a:hover .facebook-icon, 
 .top-info-right a:hover .facebook-icon {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.08);
 }
+
+.top-info-left p, .top-info-right p {
+    margin: 0 0 0 5px;
+    font-size: 0.98em;
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+@media (max-width: 600px) {
+    .top-info-container {
+        gap: 6px;
+        padding: 10px 3px 18px 3px;
+    }
+    .top-info-left, .top-info-right {
+        width: 47vw;
+        min-width: 120px;
+        font-size: 0.88rem;
+        padding: 5px 6px;
+        border-radius: 12px;
+    }
+    .facebook-icon {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+/* =================================== */
+/*      Global Styles                  */
+/* =================================== */
 
 /* تصميم حديث واحترافي لموقع Hay Day Scraper */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
@@ -420,29 +456,7 @@ main {
         font-size: 1rem;
     }
 
-    /* Top info boxes adjustments for mobile */
-    .top-info-left, .top-info-right {
-        position: relative; /* Change from fixed to relative to stack them */
-        top: auto;
-        left: auto;
-        right: auto;
-        width: 95%;
-        max-width: 400px; /* Max width for better appearance */
-        margin: 10px auto;
-        justify-content: center; /* Center the content */
-    }
 
-    .top-info-left {
-        margin-top: 15px; /* Add some space from the top */
-    }
-
-    .top-info-right {
-        margin-bottom: 15px; /* Add space below */
-    }
-
-    .top-info-left a, .top-info-right a {
-        justify-content: center; /* Center the icon and text inside the link */
-    }
 
     /* Control panel buttons */
     #control-panel {
