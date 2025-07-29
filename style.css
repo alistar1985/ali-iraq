@@ -30,6 +30,9 @@
 }
 
 .top-info-left a, .top-info-right a {
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -194,7 +197,7 @@ main {
 }
 
 .section-header.active {
-    background: linear-gradient(to right, var(--accent-color), var(--accent-dark));
+    background: linear-gradient(to right, var(--primary-dark), #2E7D32);
     font-weight: 700;
 }
 
@@ -395,6 +398,83 @@ main {
 }
 
 .product-details {
+
+/* =================================== */
+/*      Responsive Design (Mobile)     */
+/* =================================== */
+@media (max-width: 768px) {
+
+    /* Adjust main layout and padding */
+    main {
+        padding: 1rem;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 1.5rem 1rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Top info boxes adjustments for mobile */
+    .top-info-left, .top-info-right {
+        position: relative; /* Change from fixed to relative to stack them */
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 95%;
+        max-width: 400px; /* Max width for better appearance */
+        margin: 10px auto;
+        justify-content: center; /* Center the content */
+    }
+
+    .top-info-left {
+        margin-top: 15px; /* Add some space from the top */
+    }
+
+    .top-info-right {
+        margin-bottom: 15px; /* Add space below */
+    }
+
+    .top-info-left a, .top-info-right a {
+        justify-content: center; /* Center the icon and text inside the link */
+    }
+
+    /* Control panel buttons */
+    #control-panel {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        display: block;
+        width: 90%;
+        max-width: 300px;
+        margin: 12px auto;
+        font-size: 1rem;
+    }
+
+    /* Section headers */
+    .section-header {
+        padding: 1rem 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    /* Product grid */
+    .section-content, #images-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .product-item {
+        padding: 1rem 0.5rem;
+    }
+}
+
     background-color: var(--background-card);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     margin-top: -5px;
