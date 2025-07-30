@@ -398,40 +398,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // المستوى 76-100
                 // Row 1
-                { name: 'Peach Tart', arabicName: 'تارت خوخ', url: './images/products/76-100/76_peach_tart.png', level: 76 },
+                { name: 'فطيرة الخوخ', arabicName: 'فطيرة الخوخ', url: './images/products/76-100/76_peach_tart.png', level: 76 },
                 { name: 'Big Sushi Roll', arabicName: 'لفائف سوشي كبيرة', url: './images/products/76-100/76_big_sushi_roll.png', level: 76 },
-                { name: 'Tofu Dog', arabicName: 'هوت دوغ توفو', url: './images/products/76-100/76_tofu_dog.png', level: 76 },
-                { name: 'Beetroot Salad', arabicName: 'سلطة شمندر', url: './images/products/76-100/76_beetroot_salad.png', level: 76 },
+                { name: 'نقائق التوفوا', arabicName: 'نقائق التوفوا', url: './images/products/76-100/76_tofu_dog.png', level: 76 },
+                { name: 'سلطة البنجر', arabicName: 'سلطة البنجر', url: './images/products/76-100/76_beetroot_salad.png', level: 76 },
                 
                 // Row 2
-                { name: 'Plain Donut', arabicName: 'دونات سادة', url: './images/products/76-100/76_plain_donut.png', level: 76 },
-                { name: 'Salsa', arabicName: 'صلصة سالسا', url: './images/products/76-100/77_salsa.png', level: 77 },
+                { name: 'دونت سادة', arabicName: 'دونت سادة', url: './images/products/76-100/76_plain_donut.png', level: 76 },
+                { name: 'صلصة', arabicName: 'صلصة', url: './images/products/76-100/77_salsa.png', level: 77 },
                 { name: 'Taco', arabicName: 'تاكو', url: './images/products/76-100/77_taco.png', level: 77 },
                 { name: 'Colourful Omelet', arabicName: 'أومليت ملون', url: './images/products/76-100/77_colourful_omelet.png', level: 77 },
                 
                 // Row 3
                 { name: 'Spring Omelet', arabicName: 'أومليت الربيع', url: './images/products/76-100/77_spring_omelet.png', level: 77 },
-                { name: 'Orange Sorbet', arabicName: 'مثلجات البرتقال', url: './images/products/76-100/78_orange_sorbet.png', level: 78 },
-                { name: 'Corn Dog', arabicName: 'هوت دوغ بالذرة', url: './images/products/76-100/78_corn_dog.png', level: 78 },
+                { name: 'شربات البرتقال', arabicName: 'شربات البرتقال', url: './images/products/76-100/78_orange_sorbet.png', level: 78 },
+                { name: 'نقانق الذرة', arabicName: 'نقانق الذرة', url: './images/products/76-100/78_corn_dog.png', level: 78 },
                 { name: 'Potato Soup', arabicName: 'حساء البطاطس', url: './images/products/76-100/78_potato_soup.png', level: 78 },
                 
                 // Row 4
-                { name: 'Summer Rolls', arabicName: 'لفائف الصيف', url: './images/products/76-100/78_summer_rolls.png', level: 78 },
+                { name: 'لفائف سمر رولز', arabicName: 'لفائف سمر رولز', url: './images/products/76-100/78_summer_rolls.png', level: 78 },
                 { name: 'Sesame Brittle', arabicName: 'حلوى السمسم', url: './images/products/76-100/78_sesame_brittle.png', level: 78 },
-                { name: 'Affogato', arabicName: 'أفوغاتو', url: './images/products/76-100/78_affogato.png', level: 78 },
+                { name: 'اوفوجاتو', arabicName: 'اوفوجاتو', url: './images/products/76-100/78_affogato.png', level: 78 },
                 { name: 'Fish Taco', arabicName: 'تاكو السمك', url: './images/products/76-100/79_fish_taco.png', level: 79 },
                 
                 // Row 5
                 { name: 'Peach Jam', arabicName: 'مربى الخوخ', url: './images/products/76-100/79_peach_jam.png', level: 79 },
-                { name: 'Lobster Pasta', arabicName: 'معكرونة بسرطان البحر', url: './images/products/76-100/79_lobster_pasta.png', level: 79 },
+                { name: 'باستا سرطان البحر', arabicName: 'باستا سرطان البحر', url: './images/products/76-100/79_lobster_pasta.png', level: 79 },
                 { name: 'Cucumber Sandwich', arabicName: 'شطيرة خيار', url: './images/products/76-100/79_cucumber_sandwich.png', level: 79 },
                 { name: 'Spicy Fish', arabicName: 'سمك حار', url: './images/products/76-100/79_spicy_fish.png', level: 79 },
                 
                 // Row 6
-                { name: 'Sprinkled Donut', arabicName: 'دونات بالرش', url: './images/products/76-100/79_sprinkled_donut.png', level: 79 },
+                { name: 'دونت مرشوش', arabicName: 'دونت مرشوش', url: './images/products/76-100/79_sprinkled_donut.png', level: 79 },
                 { name: 'Cheese Omelet', arabicName: 'أومليت بالجبن', url: './images/products/76-100/79_cheese_omelet.png', level: 79 },
                 { name: 'Green Tea', arabicName: 'شاي أخضر', url: './images/products/76-100/80_green_tea.png', level: 80 },
-                { name: 'Onion Dog', arabicName: 'هوت دوغ بالبصل', url: './images/products/76-100/80_onion_dog.png', level: 80 },
+                { name: 'نقانق بالبصل', arabicName: 'نقانق بالبصل', url: './images/products/76-100/80_onion_dog.png', level: 80 },
                 
                 // Row 7
                 { name: 'Stuffed Peppers', arabicName: 'فلفل محشي', url: './images/products/76-100/80_stuffed_peppers.png', level: 80 },
@@ -440,9 +440,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // المستوى 101-125
                 // Row 1
                 { name: 'Fresh Diffuser', arabicName: 'معطر منعش', url: './images/products/101-125/110_fresh_diffuser.png', level: 110 },
-                { name: 'Rice Ball', arabicName: 'كرات الأرز', url: './images/products/101-125/110_rice_ball.png', level: 110 },
+                { name: 'كرة ارز', arabicName: 'كرة ارز', url: './images/products/101-125/110_rice_ball.png', level: 110 },
                 { name: 'Guava Cupcake', arabicName: 'كب كيك الجوافة', url: './images/products/101-125/109_guava_cupcake.png', level: 109 },
-                { name: 'Peanut Fudge', arabicName: 'حلوى الفول السوداني', url: './images/products/101-125/111_peanut_fudge.png', level: 111 },
+                { name: 'فادج الفول السوداني', arabicName: 'فادج الفول السوداني', url: './images/products/101-125/111_peanut_fudge.png', level: 111 },
                 
                 // Row 2
                 { name: 'Winter Stew', arabicName: 'يخني الشتاء', url: './images/products/101-125/112_winter_stew.png', level: 112 },
@@ -450,17 +450,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Plain Waffles', arabicName: 'وافل سادة', url: './images/products/101-125/114_plain_waffles.png', level: 114 },
                 { name: 'Zesty Perfume', arabicName: 'عطر منعش', url: './images/products/101-125/111_zesty_perfume.png', level: 111 },
                 { name: 'Cookie Cupcake', arabicName: 'كب كيك بالكوكيز', url: './images/products/101-125/111_cookie_cupcake.png', level: 111 },
-                { name: 'Calming Diffuser', arabicName: 'معطر مهدئ', url: './images/products/101-125/116_calming_diffuser.png', level: 116 },
+                { name: 'معطر الاسترخاء', arabicName: 'معطر الاسترخاء', url: './images/products/101-125/116_calming_diffuser.png', level: 116 },
                 { name: 'Orange Salad', arabicName: 'سلطة البرتقال', url: './images/products/101-125/117_orange_salad.png', level: 117 },
                 
                 // Row 3
                 { name: 'Chocolate Waffles', arabicName: 'وافل بالشوكولاتة', url: './images/products/101-125/117_chocolate_waffles.png', level: 117 },
                 { name: 'Breakfast Waffles', arabicName: 'وافل الإفطار', url: './images/products/101-125/119_breakfast_waffles.png', level: 119 },
-                { name: 'Breakfast Bowl', arabicName: 'وجبة إفطار في وعاء', url: './images/products/101-125/119_breakfast_bowl.png', level: 119 },
+                { name: 'وعاء الفطر', arabicName: 'وعاء الفطر', url: './images/products/101-125/119_breakfast_bowl.png', level: 119 },
                 { name: 'Apple Porridge', arabicName: 'عصيدة التفاح', url: './images/products/101-125/119_apple_porridge.png', level: 119 },
                 
                 // Row 4
-                { name: 'Pineapple Coconut Bars', arabicName: 'ألواح الأناناس وجوز الهند', url: './images/products/101-125/120_pineapple_coconut_bars.png', level: 120 },
+                { name: 'قوالب جوز الهند بالاناناس', arabicName: 'قوالب جوز الهند بالاناناس', url: './images/products/101-125/120_pineapple_coconut_bars.png', level: 120 },
                 { name: 'Sweet Porridge', arabicName: 'عصيدة حلوة', url: './images/products/101-125/120_sweet_porridge.png', level: 120 },
                 { name: 'Rich Soap', arabicName: 'صابون فاخر', url: './images/products/101-125/121_rich_soap.png', level: 121 },
                 { name: 'Fresh Porridge', arabicName: 'عصيدة طازجة', url: './images/products/101-125/122_fresh_porridge.png', level: 122 },
